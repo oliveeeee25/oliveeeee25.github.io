@@ -2,11 +2,11 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D. Student at the University of Georgia
+subtitle:  🎓 Ph.D. Student at the University of North Texas
 
 profile:
   align: right
-  image: 1.png
+  image: fig.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -23,4 +23,4 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am Qitao Tan. I am currently a Ph.D. student in Department of Computer Science at the University of Pittsburgh, advised by Dr. Xulong Tang. I received my B.E. degree in Software Engineering from Sichuan University, China, in 2020. My research focuses on designing and optimizing efficient machine learning algorithms and systems, spanning applications in diffusion-based video generation, self-supervised contrastive learning, and supervised model training. I also work on 3D-related algorithms and systems, such as efficient 3D Gaussian Splatting. My research targets diverse platforms, ranging from powerful cloud clusters to resource-constrained edge devices.
+Hi, this is Xiaoying Song, a Ph.D. student in Department of information Science at the University of North Texas, advised by [Dr. Lingzi Hong.](https://lingzihong.github.io/index.html) Pior to that, I received my M.S. degree in information science from Central China Normal University, China, in 2023. My research focuses on human-centered computing at the intersection of NLP and computational social science. I study how LLMs interact with humans to ensure effectiveness, safety, and equity. Besides, I also explore how LLMs can incorporate time, location, and sequential human behavioral data to better understand evolving events and to generate responses that are timely, context-aware, and aligned with human needs.

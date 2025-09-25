@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2025-06-22 
+date: 2025-08-20 
 inline: true
 related_posts: false
 ---
 
-One paper accepted by ICCAD 2025.
+Two paper accepted by *EMNLP 2025 Findings* 🥳
+

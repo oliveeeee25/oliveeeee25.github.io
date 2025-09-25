@@ -1,12 +1,16 @@
 ---
 layout: page
 permalink: /service/
-title: service
-description: Materials for courses you taught. Replace this text with your description.
+title: Service
+description: 
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Conference Reviewers:
 
-Organize your courses by years, topics, or universities, however you like!
+* Annual Conference on Neural Information Processing Systems (NeurIPS)
+* The Conference on Empirical Methods in Natural Language Processing (EMNLP)
+* The Nations of the Americas Chapter of the Association for Computational Linguistics(NAACL)
+* International Conference on Computational Linguistics (COLING)
+* Joint Conference on Digital Libraries (JCDL)

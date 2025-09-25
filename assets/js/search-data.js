@@ -10,7 +10,7 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -24,8 +24,8 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "nav-service",
-          title: "service",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          title: "Service",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/service/";
@@ -398,16 +398,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-one-paper-is-accepted-by-naacl-2025-findings",
+          title: 'One paper is accepted by NAACL 2025 Findings 🪂',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-one-paper-is-accepted-by-colm-2025",
+          title: 'One paper is accepted by COLM 2025 🦙',
           description: "",
-          section: "News",},{id: "news-one-paper-accepted-by-iccad-2025",
-          title: 'One paper accepted by ICCAD 2025.',
+          section: "News",},{id: "news-two-paper-accepted-by-emnlp-2025-findings",
+          title: 'Two paper accepted by EMNLP 2025 Findings 🥳',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -473,7 +471,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=NfmhQZcAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=wn5zGK4AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',

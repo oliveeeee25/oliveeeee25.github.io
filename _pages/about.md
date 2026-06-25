@@ -6,7 +6,7 @@ subtitle:  🎓 Ph.D. Student at the University of North Texas
 
 profile:
   align: right
-  image: fig.jpg
+  image: profile_new.png
   image_circular: false # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"

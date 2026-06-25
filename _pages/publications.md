@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description: Peer-reviewed work on language models, counterspeech, crisis response, and computational social science.
 nav: true
 nav_order: 2
 ---

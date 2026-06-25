@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper is accepted by *COLM 2025* 🦙
+One paper was accepted to *COLM 2025*.

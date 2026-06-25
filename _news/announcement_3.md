@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper is accepted by *NAACL 2025 Findings* 🪂
+One paper was accepted to *Findings of NAACL 2025*.

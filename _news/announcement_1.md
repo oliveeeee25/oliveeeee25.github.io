@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two paper accepted by *EMNLP 2025 Findings* 🥳
-
+Two papers were accepted to *Findings of EMNLP 2025*.

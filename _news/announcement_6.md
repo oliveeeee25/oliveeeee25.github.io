@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-On May 6, 2026, our team won second place in the CLEF CheckThat! 2026 competition.
+Our team won second place in the CLEF CheckThat! 2026 competition.

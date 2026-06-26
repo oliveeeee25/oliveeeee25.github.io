@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-On April 23, 2026, I delivered a tutorial for the 2026 ASIS&T IDEA program on AI-assisted communication.
+I delivered a tutorial for the 2026 ASIS&T IDEA program on AI-assisted communication.

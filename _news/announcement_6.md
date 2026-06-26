@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our team won second place in the CLEF CheckThat! 2026 competition.
+Our team won second place in the CLEF CheckThat! 2026 competition. 🥈

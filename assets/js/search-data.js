@@ -395,7 +395,7 @@ ninja.data = [{
           title: 'I delivered a tutorial for the 2026 ASIS&amp;amp;amp;T IDEA program on AI-assisted communication....',
           description: "",
           section: "News",},{id: "news-our-team-won-second-place-in-the-clef-checkthat-2026-competition",
-          title: 'Our team won second place in the CLEF CheckThat! 2026 competition. 🥈',
+          title: 'Our team won second place in the CLEF CheckThat! 2026 competition.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

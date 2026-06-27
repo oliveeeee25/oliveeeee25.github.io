@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Speaking at the Right Level" got Honorable Mention in ASIS&T SIG-SM Student Competition. 🏅
+"Speaking at the Right Level" got Honorable Mention in [ASIS&T SIG-SM Student Competition](https://www.asist.org/meetings-events/am/am25/social-media-workposium/). 🏅

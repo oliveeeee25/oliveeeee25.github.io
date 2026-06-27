@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I defended my Ph.D. qualifying exam and became a Ph.D. candidate.
+I defended my Ph.D. qualifying exam and became a Ph.D. candidate. 🎓

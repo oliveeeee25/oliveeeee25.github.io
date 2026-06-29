@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed work on language models, counterspeech, crisis response, and computational social science.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";

@@ -79,8 +79,14 @@ layout: default
     {% endif %}
 
     <div style="text-align: center; margin-top: 2rem;">
-      <div id="mmvst_globe"></div>
-      <script type="text/javascript" src="https://mapmyvisitors.com/globe.js?d=Ih8Y-aip4XnNuyv6kOfjzoVO7o6lbTZSY7MWJ7szIqI"></script>
+      <div id="mmvst_a"></div>
     </div>
+    <script>
+      window.addEventListener('load', function () {
+        var s = document.createElement('script');
+        s.src = 'https://mapmyvisitors.com/globe.js?d=Ih8Y-aip4XnNuyv6kOfjzoVO7o6lbTZSY7MWJ7szIqI';
+        document.body.appendChild(s);
+      });
+    </script>
   </article>
 </div>

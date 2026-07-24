@@ -9,7 +9,7 @@ last_name: Song
 contact_note: >
   For research inquiries and collaboration, please connect through LinkedIn or Google Scholar.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website of Xiaoying Song, a Ph.D. Candidate in Information Science at the University of North Texas.
+  Academic website of Xiaoying Song, a Ph.D. Candidate in Data Science at the University of North Texas.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

@@ -23,7 +23,7 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I’m Xiaoying, a Ph.D. Candidate in the Department of Information Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. 
+Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. 
 
 
 My research focuses on **human-agent collaboration**, including multi-turn conversation optimization and multi-agent collaboration; **personalized alignment**, including user-centered dialogue systems and personalized safety alignment; and **computational social science**, with interests in health misinformation and crisis mitigation. I am especially interested in how large language models can better understand user needs over time, coordinate with humans and other agents, and generate responses that are aligned with diverse user preferences.

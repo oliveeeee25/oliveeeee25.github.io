@@ -4,7 +4,7 @@
     - name: Full Name
       value: Xiaoying Song
     - name: Current Position
-      value: Ph.D. Candidate, Department of Information Science
+      value: Ph.D. Candidate, Data Science
     - name: Institution
       value: University of North Texas
     - name: Advisor
@@ -15,7 +15,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Candidate, Information Science
+    - title: Ph.D. Candidate, Data Science
       institution: University of North Texas
       year: Current
       description:

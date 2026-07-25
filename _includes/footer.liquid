@@ -1,15 +1,3 @@
-{% capture visitor_map %}
-  {% if site.visitor_map_id %}
-    <div class="visitor-map">
-      <script
-        type="text/javascript"
-        id="mapmyvisitors"
-        src="//mapmyvisitors.com/map.js?d={{ site.visitor_map_id }}&cl=ffffff&w=a"
-      ></script>
-    </div>
-  {% endif %}
-{% endcapture %}
-
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
   {{ site.first_name }}
@@ -29,7 +17,6 @@
       {{ footer_contents }}
     </div>
   </footer>
-  {{ visitor_map }}
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
     {% if site.newsletter.enabled %}
@@ -38,7 +25,6 @@
 
     <div class="container">
       {{ footer_contents }}
-      {{ visitor_map }}
     </div>
   </footer>
 {% endif %}

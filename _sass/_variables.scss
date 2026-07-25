@@ -32,9 +32,9 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-// Site identity — "Seal & Ink" palette
-$seal-red: #a8382b !default; // light-theme accent, the red of seal paste
-$seal-red-soft: #e08a7d !default; // dark-theme accent, softened persimmon
+// Site identity — accent palette
+$accent-color: #5e35b1 !default; // light-theme accent, deep violet
+$accent-color-soft: #b39ddb !default; // dark-theme accent, soft lavender
 
 // Typefaces
 $font-display: "Spectral", Georgia, "Times New Roman", serif !default;
@@ -43,7 +43,7 @@ $font-mono-ui: "IBM Plex Mono", SFMono-Regular, Menlo, Consolas, monospace !defa
 
 // Theme colors
 
-$code-bg-color-light: rgba($seal-red, 0.05);
+$code-bg-color-light: rgba($accent-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

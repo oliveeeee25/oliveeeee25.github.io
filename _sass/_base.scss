@@ -4,6 +4,29 @@
 
 // Typography
 
+body {
+  font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+}
+
+.navbar-brand {
+  font-family: $font-display;
+}
+
 p,
 h1,
 h2,
@@ -634,7 +657,7 @@ footer.sticky-bottom {
     }
 
     &.active .page-link {
-      color: $white-color;
+      color: var(--global-hover-text-color);
       background-color: var(--global-theme-color);
 
       &:hover {
@@ -746,9 +769,14 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+          font-family: $font-mono-ui;
+          font-weight: 500;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          border-radius: 2px !important;
 
           a {
-            color: white;
+            color: var(--global-card-bg-color);
 
             &:hover {
               text-decoration: none;
@@ -763,7 +791,9 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-family: $font-display;
+        font-weight: 600;
+        font-size: 1.05rem;
       }
 
       .author {
@@ -798,13 +828,14 @@ footer.sticky-bottom {
           display: inline-block;
           margin-left: 0.4rem;
           padding: 0.02rem 0.5rem;
-          font-size: 0.72rem;
-          font-weight: 700;
-          letter-spacing: 0.03em;
-          line-height: 1.4;
+          font-family: $font-mono-ui;
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.08em;
+          line-height: 1.5;
           color: var(--global-theme-color);
           border: 1px solid var(--global-theme-color);
-          border-radius: 1rem;
+          border-radius: 2px;
           vertical-align: 0.1rem;
           white-space: nowrap;
 
@@ -1374,7 +1405,7 @@ ninja-keys::part(ninja-input-wrapper) {
 // highlight-search-term
 ::highlight(search) {
   background-color: var(--global-theme-color);
-  color: var(--global-text-color);
+  color: var(--global-hover-text-color);
 }
 
 figure.cover {

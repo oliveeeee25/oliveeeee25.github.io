@@ -177,6 +177,21 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
+      {%- if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          {% assign paper_url = entry.pdf %}
+        {% else %}
+          {% assign paper_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
+        {% endif %}
+        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>PDF</a>
+      {%- elsif entry.html %}
+        {% if entry.html contains '://' %}
+          {% assign paper_url = entry.html %}
+        {% else %}
+          {% assign paper_url = entry.html | prepend: '/assets/html/' | relative_url %}
+        {% endif %}
+        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i>Paper</a>
+      {%- endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
@@ -200,20 +215,6 @@
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
-      {% if entry.html %}
-        {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}

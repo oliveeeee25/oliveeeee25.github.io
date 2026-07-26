@@ -206,6 +206,76 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Research pillars (about page)
+
+.research-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+  margin: 1.25rem 0 1.5rem;
+  clear: both; // start below the floated profile image so cards get full width
+
+  .pillar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--global-theme-color);
+    border-radius: 4px;
+    padding: 0.9rem 1rem 0.85rem;
+    background-color: var(--global-card-bg-color);
+
+    h3 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin: 0 0 0.4rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.65rem;
+      flex-grow: 1;
+    }
+
+    .pillar-pubs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+
+      a {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        color: var(--global-text-color);
+
+        &:before {
+          content: "\2192\00a0";
+          color: var(--global-theme-color);
+        }
+
+        span {
+          font-family: $font-mono-ui;
+          font-size: 0.68rem;
+          letter-spacing: 0.05em;
+          color: var(--global-theme-color);
+          white-space: nowrap;
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .research-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Citation
 
 .citation,
@@ -725,6 +795,11 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+
+  // anchor targets (e.g. /publications/#bibkey) must clear the fixed navbar
+  ol.bibliography li div[id] {
+    scroll-margin-top: 66px;
+  }
 
   h1 {
     color: var(--global-theme-color);

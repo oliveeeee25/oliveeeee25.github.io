@@ -26,4 +26,31 @@ announcements:
 Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. 
 
 
-My research focuses on **human-agent collaboration**, including multi-turn conversation optimization and multi-agent collaboration; **personalized alignment**, including user-centered dialogue systems and personalized safety alignment; and **computational social science**, with interests in health misinformation and crisis mitigation. I am especially interested in how large language models can better understand user needs over time, coordinate with humans and other agents, and generate responses that are aligned with diverse user preferences.
+My research asks how large language models can understand user needs over time, coordinate with humans and other agents, and generate responses aligned with diverse user preferences. It is organized around three pillars:
+
+<div class="research-pillars">
+  <div class="pillar">
+    <h3>Human–Agent Collaboration</h3>
+    <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#anikmulti">Multi-agent RAG against health misinformation <span>COLM 2025</span></a>
+      <a href="/publications/#song2025echoes">Forecasting hater reactions to counterspeech <span>NAACL 2025</span></a>
+    </div>
+  </div>
+  <div class="pillar">
+    <h3>Personalized Alignment</h3>
+    <p>User-centered dialogue systems and safety alignment that adapts to who the user is.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#song2025speaking">Literacy-controlled counterspeech with RAG-RL <span>EMNLP 2025</span></a>
+      <a href="/publications/#tan2026palette">On-demand safety alignment relaxation <span>Preprint 2026</span></a>
+    </div>
+  </div>
+  <div class="pillar">
+    <h3>Computational Social Science</h3>
+    <p>Language technologies for healthier online discourse: countering misinformation and supporting crisis response.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#song2025dynamic">Consistent crisis response via dynamic fusion <span>EMNLP 2025</span></a>
+      <a href="/publications/#perez2025analyzing">How users flag hate speech on Reddit <span>Inf. Res. 2025</span></a>
+    </div>
+  </div>
+</div>

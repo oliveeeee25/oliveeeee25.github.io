@@ -25,7 +25,7 @@ announcements:
 
 Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. My work has appeared at NLP and information science venues including EMNLP, NAACL, COLING, and COLM, as well as in journals such as *Journal of Information Science*, *Journal of Informetrics*, and *Machine Learning*.
 
-I build language technologies that work **with** people, not just for them. That means systems that keep track of what a user needs as a conversation unfolds, coordinate smoothly with humans and other agents, and tailor what they say — and what they refuse to say — to the person on the other side of the screen. I care most about the settings where getting this right matters: countering hate speech and health misinformation, and communicating clearly in a crisis. This agenda unfolds along three pillars:
+I build LLM systems end to end: multi-agent pipelines that coordinate retrieval, generation, and verification; conversational agents that track what a user needs across turns; and alignment and adaptation techniques — RAG, RL, PEFT/LoRA fine-tuning, quantization-aware training — that tune model behavior, including safety behavior, to different users and use cases. I focus on high-stakes applications where reliability and user trust decide whether a system ships: content moderation, misinformation response, and crisis communication. My work spans three areas:
 
 <div class="research-pillars">
   <div class="pillar">

@@ -871,24 +871,28 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        // image first, venue stamp beneath it, so the image top aligns
-        // with the title top in the content column
+        // venue stamp on top, image in the middle, keywords pinned to the
+        // bottom, so the column's top and bottom edges align with the text
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
+        flex-direction: column;
 
         figure {
           margin: 0;
         }
 
-        img.preview {
-          margin-top: 0.2rem; // optical alignment with the title's cap height
+        .pub-keywords {
+          margin-top: auto;
+          padding-top: 0.6rem;
+
+          .pub-keyword {
+            white-space: normal; // the column is narrow; let long terms wrap
+          }
         }
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          margin: 0.45rem 0 0;
+          margin: 0 0 0.5rem;
           color: var(--global-card-bg-color) !important;
           font-family: $font-mono-ui;
           font-weight: 500;

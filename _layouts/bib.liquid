@@ -42,6 +42,14 @@
           %}
         {% endif %}
       {% endif %}
+      {% if entry.keywords %}
+        <div class="pub-keywords">
+          {% assign kw_list = entry.keywords | split: ',' %}
+          {% for kw in kw_list %}
+            <span class="pub-keyword">{{ kw | strip }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
 
@@ -199,14 +207,6 @@
 
     {% if entry.description %}
       <div class="pub-desc">{{ entry.description }}</div>
-    {% endif %}
-    {% if entry.keywords %}
-      <div class="pub-keywords">
-        {% assign kw_list = entry.keywords | split: ',' %}
-        {% for kw in kw_list %}
-          <span class="pub-keyword">{{ kw | strip }}</span>
-        {% endfor %}
-      </div>
     {% endif %}
 
     <!-- Links/Buttons -->

@@ -16,6 +16,16 @@ nav_order: 6
 * All presented at IDEA Institute on AI, Association for Information Science & Technology (ASIS&T).
 
 
+## Conference Reviewers
+
+* The Conference on Association for Computational Linguistics (ACL)
+* The Conference on Empirical Methods in Natural Language Processing (EMNLP)
+* The Nations of the Americas Chapter of the Association for Computational Linguistics(NAACL)
+* The Conference on Language Modeling (COLM)
+* International Conference on Computational Linguistics (COLING)
+* Joint Conference on Digital Libraries (JCDL)
+
+
 ## Mentoring & Advising
 
 * **Mentor, UNT AI Summer Program** (2024 – 2026): guided master's and undergraduate students through summer AI research projects, with mentees co-authoring papers at COLM and EMNLP.
@@ -26,13 +36,3 @@ nav_order: 6
   * Sujana Mamidisetty, on LLM generation evaluation
   * Diana Zhang, on LLM system design for fact-checking
   * Elliott Wang, on natural language generation
-
-
-## Conference Reviewers
-
-* The Conference on Association for Computational Linguistics (ACL)
-* The Conference on Empirical Methods in Natural Language Processing (EMNLP)
-* The Nations of the Americas Chapter of the Association for Computational Linguistics(NAACL)
-* The Conference on Language Modeling (COLM)
-* International Conference on Computational Linguistics (COLING)
-* Joint Conference on Digital Libraries (JCDL)

@@ -46,7 +46,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="col-sm-10">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -196,6 +196,18 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
+    {% if entry.description %}
+      <div class="pub-desc">{{ entry.description }}</div>
+    {% endif %}
+    {% if entry.keywords %}
+      <div class="pub-keywords">
+        {% assign kw_list = entry.keywords | split: ',' %}
+        {% for kw in kw_list %}
+          <span class="pub-keyword">{{ kw | strip }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

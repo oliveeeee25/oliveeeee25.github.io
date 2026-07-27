@@ -206,46 +206,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// News timeline (about page)
-
-.news .news-timeline {
-  padding-top: 0.2rem;
-
-  .timeline-item {
-    position: relative;
-    margin-left: 0.4rem;
-    padding: 0 0 0.9rem 1.4rem;
-    border-left: 2px solid var(--global-divider-color);
-
-    &:last-child {
-      padding-bottom: 0.2rem;
-    }
-
-    .timeline-marker {
-      position: absolute;
-      left: -6px;
-      top: 0.3rem;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: var(--global-theme-color);
-      border: 2px solid var(--global-bg-color);
-    }
-
-    .timeline-date {
-      font-family: $font-mono-ui;
-      font-size: 0.72rem;
-      letter-spacing: 0.05em;
-      color: var(--global-text-color-light);
-      margin-bottom: 0.1rem;
-    }
-
-    .timeline-content {
-      font-size: 0.95rem;
-    }
-  }
-}
-
 // Research pillars (about page)
 
 .research-pillars {
@@ -871,9 +831,43 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
+      padding: 1.1rem 1.2rem 1rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      background-color: var(--global-card-bg-color);
+      transition: border-color 0.15s ease-in-out;
+
+      &:hover {
+        border-color: var(--global-theme-color);
+      }
 
       .preview {
+        width: 100%;
+      }
+
+      .pub-desc {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: var(--global-text-color-light);
+        margin-top: 0.45rem;
+      }
+
+      .pub-keywords {
+        margin-top: 0.45rem;
+
+        .pub-keyword {
+          display: inline-block;
+          margin: 0 0.3rem 0.3rem 0;
+          padding: 0.02rem 0.45rem;
+          font-family: $font-mono-ui;
+          font-size: 0.68rem;
+          letter-spacing: 0.04em;
+          color: var(--global-text-color);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 2px;
+          white-space: nowrap;
+        }
       }
 
       .abbr {

@@ -9,6 +9,8 @@ abbr={Preprint},
   year={2026},
   selected={true},
   pdf={https://arxiv.org/pdf/2605.24154},
+  description={Proposes Palette, a framework that selectively relaxes LLM refusal behavior in authorized professional domains while preserving safety elsewhere, combining refusal-direction search, lightweight adaptation, and parameter merging for multi-domain composition without retraining.},
+  keywords={safety alignment, refusal behavior, model merging, controllability},
   preview={PALETTE.png}
 }
 
@@ -19,6 +21,8 @@ abbr={Preprint},
   journal={arXiv preprint arXiv:2601.08089},
   year={2026},
   pdf={https://arxiv.org/pdf/2601.08089},
+  description={Introduces Q-realign, a post-training defense that restores safety alignment eroded by task-specific fine-tuning by piggybacking realignment on quantization. It reduces unsafe outputs while preserving task performance, realigning a 7B model on consumer hardware in about 40 minutes.},
+  keywords={safety realignment, quantization, fine-tuning risks, efficient deployment},
   preview={Q.png}
 }
 
@@ -29,6 +33,8 @@ abbr={Preprint},
   journal={arXiv preprint arXiv:2509.00031},
   year={2025},
   pdf={https://arxiv.org/pdf/2509.00031},
+  description={Proposes ZeroQAT, a quantization-aware training framework that uses zeroth-order, forward-only gradient estimation to avoid backpropagation memory costs, enabling 2-4 bit fine-tuning of a 13B model on an 8GB GPU and on-smartphone training.},
+  keywords={quantization, zeroth-order optimization, on-device training, LLM efficiency},
   preview={ZeroQAT.png}
 }
 
@@ -40,6 +46,8 @@ abbr={JIS},
   year={2026},
   publisher={SAGE Publications},
   html={https://doi.org/10.1177/01655515261425547},
+  description={Compares LLMs on classifying books into the Library of Congress Classification system, varying input data, data size, model, and class granularity. Llama3 performs best; diverse inputs help, but models struggle with long text and fine-grained categories.},
+  keywords={LLM evaluation, book classification, library cataloging, text classification},
   preview={LCC.png}
 }
 
@@ -53,6 +61,8 @@ abbr={EMNLP},
   selected={true},
   year={2025},
   pdf={https://aclanthology.org/2025.findings-emnlp.153.pdf},
+  description={Proposes Controlled-Literacy, a RAG plus reinforcement learning framework that generates counterspeech to health misinformation tailored to the audience's health literacy level, producing more accessible and preferred counterspeech than baselines.},
+  keywords={counterspeech, health misinformation, RAG, reinforcement learning, readability},
   preview={Speak.png}
 }
 
@@ -64,6 +74,8 @@ abbr={EMNLP},
   selected={true},
   year={2025},
   pdf={https://aclanthology.org/2025.findings-emnlp.149.pdf},
+  description={Introduces a metric for style consistency in automated crisis responses and a two-stage fusion approach that scores candidate responses and integrates them at the instance level, improving both response quality and stylistic uniformity across datasets.},
+  keywords={crisis communication, style consistency, text generation, model fusion},
   preview={Crisis.png}
 
 }
@@ -76,6 +88,8 @@ abbr={COLM},
   selected={true},
   year={2025},
   pdf={https://openreview.net/pdf?id=P61AgRyU7E},
+  description={Presents a multi-agent retrieval-augmented framework that combines static and dynamic evidence to generate counterspeech against health misinformation, outperforming baselines in politeness, relevance, informativeness, and factual accuracy.},
+  keywords={counterspeech, health misinformation, multi-agent systems, RAG},
   preview={multi_agent.png}
 
 }
@@ -89,6 +103,8 @@ abbr={NAACL},
   selected={true},
   year={2025},
   pdf={https://aclanthology.org/2025.findings-naacl.275.pdf},
+  description={Studies whether counterspeech leads haters to reenter conversations and whether reentry stays hateful, introducing ReEco, a dataset of triple-turn Reddit conversations, and linking counterspeech language to hater reactions.},
+  keywords={counterspeech, hate speech, user behavior prediction, social media},
   preview={hatespeech.png}
 }
 
@@ -100,6 +116,8 @@ abbr={COLING},
   pages={3547--3559},
   year={2025},
   pdf={https://aclanthology.org/2025.coling-main.239.pdf},
+  description={Evaluates how human-like AI-generated counterspeech is, testing several LLM generation strategies. Both classifiers and human judges easily distinguish AI-generated from human-written counterspeech, with differences in linguistic style, politeness, and specificity.},
+  keywords={counterspeech, LLM evaluation, human likeness, hate speech},
   preview={humanlike.png}
 }
 
@@ -110,6 +128,8 @@ abbr={ISCRAM},
   booktitle={Proceedings of the International ISCRAM Conference},
   year={2025},
   pdf={https://ojs.iscram.org/index.php/Proceedings/article/download/152/127},
+  description={Explores instruction prompting, retrieval-augmented generation, and dynamic fusion of multiple LLMs to answer crisis-related information needs on social media. Dynamic fusion produces better responses in professionalism, actionability, empathy, and relevance.},
+  keywords={crisis communication, LLM fusion, RAG, social media},
   preview={iscram.png}
 }
 
@@ -120,6 +140,8 @@ abbr={ASIST},
   booktitle={Association for Information Science and Technology},
   year={2025},
   html={https://doi.org/10.1002/pra2.1269},
+  description={Proposes a hybrid framework for library subject analysis in which embedding-based models predict the number of Library of Congress Subject Headings and post-edit LLM outputs, yielding more controlled, vocabulary-aligned predictions with fewer hallucinations.},
+  keywords={subject analysis, LCSH, multi-label classification, embeddings},
   preview={hybrid.png}
 
 }
@@ -131,6 +153,8 @@ abbr={iConference},
   booktitle={Information Research an international electronic journal},
   year={2025},
   pdf={https://publicera.kb.se/ir/article/download/47191/37108},
+  description={Builds a dataset of Reddit user flagging messages paired with hateful comments and applies transformer models to classify them. Linguistic analysis reveals distinct patterns in flagging content, suggesting user flags can improve hate speech moderation.},
+  keywords={hate speech, content moderation, Reddit, user flagging},
   preview={flagging.png}
 }
 
@@ -142,6 +166,8 @@ abbr={EMNLP},
   pages={4523--4536},
   year={2024},
   pdf={https://aclanthology.org/2024.emnlp-main.260.pdf},
+  description={Generates counterspeech constrained by desired conversation outcomes, low incivility and non-hateful hater reentry, using prompting, fine-tuning, and reinforcement learning with LLMs. The methods steer generation toward those outcomes.},
+  keywords={counterspeech, hate speech, reinforcement learning, controlled generation},
   preview={outcome.png}
 }
 
@@ -157,6 +183,8 @@ abbr={JOIS},
   year={2026},
   publisher={SAGE Publications Sage UK: London, England},
   html={https://doi.org/10.1177/01655515241287635},
+  description={Proposes MAH, a heterogeneous network representation learning method for recommending academic collaborators that combines co-authorship and citation networks with multi-dimensional researcher attributes, improving recommendation performance on real-world datasets.},
+  keywords={collaboration recommendation, graph neural networks, network embedding},
   preview={JOIS.png}
 }
 
@@ -171,6 +199,8 @@ abbr={MLJ},
   year={2023},
   publisher={Springer},
   html={https://doi.org/10.1007/s10994-023-06408-8},
+  description={Proposes nmCSE, a negative mining method for unsupervised contrastive sentence embedding learning that selects negatives via distance-based weighting and grid sampling instead of random sampling, improving performance on seven semantic textual similarity datasets.},
+  keywords={sentence embeddings, contrastive learning, negative sampling},
   preview={ML.png}
 }
 
@@ -185,6 +215,8 @@ abbr={JOI},
   year={2023},
   publisher={Elsevier},
   html={https://doi.org/10.1016/j.joi.2023.101421},
+  description={Detects research frontiers from research grant information rather than papers or patents, using adapted indicators and path mining to trace topic evolution. A case study on US health informatics identifies five frontier topics among 47 clustered topics.},
+  keywords={research frontier detection, grant analysis, topic evolution, health informatics},
   preview={JOI.png}
 }
 

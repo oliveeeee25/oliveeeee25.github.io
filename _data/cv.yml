@@ -59,3 +59,14 @@
       items:
         - Health misinformation.
         - Crisis mitigation.
+
+- title: Service
+  type: nested_list
+  contents:
+    - title: Mentoring & Advising
+      items:
+        - Mentor, UNT AI Summer Program (2024 – 2026). Guided master's and undergraduate students through AI research projects; mentees co-authored papers at COLM and EMNLP.
+        - Advised Sujana Mamidisetty, Diana Zhang, and Elliott Wang (2023 – 2026), admitted to computer science programs at UMD, UT, and Purdue.
+    - title: Academic Service
+      items:
+        - Reviewer for ACL, NAACL, EMNLP, COLING, COLM, NeurIPS, JCDL, and ASIS&T.

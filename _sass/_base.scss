@@ -870,23 +870,26 @@ footer.sticky-bottom {
         }
       }
 
-      .abbr {
-        // venue stamp on top, image in the middle, keywords pinned to the
-        // bottom, so the column's top and bottom edges align with the text
+      // content column: keywords pinned to the bottom edge
+      .row > div[id] {
         display: flex;
         flex-direction: column;
 
-        figure {
-          margin: 0;
-        }
-
         .pub-keywords {
           margin-top: auto;
-          padding-top: 0.6rem;
+          padding-top: 0.55rem;
+        }
+      }
 
-          .pub-keyword {
-            white-space: normal; // the column is narrow; let long terms wrap
-          }
+      .abbr {
+        // right image column: venue stamp on top, enlarged figure pinned to
+        // the bottom, so both columns share top and bottom edges
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        figure {
+          margin: 0;
         }
 
         abbr {

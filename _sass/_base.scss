@@ -870,44 +870,46 @@ footer.sticky-bottom {
         }
       }
 
-      // content column: keywords pinned to the bottom edge
-      .row > div[id] {
-        display: flex;
-        flex-direction: column;
-
-        .pub-keywords {
-          margin-top: auto;
-          padding-top: 0.55rem;
-        }
+      // image and venue live in their own box; text column centers on it
+      .row {
+        align-items: center;
       }
 
       .abbr {
-        // right image column: venue stamp on top, enlarged figure pinned to
-        // the bottom, so both columns share top and bottom edges
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        .pub-thumb {
+          border: 1px solid var(--global-divider-color);
+          border-radius: 6px;
+          overflow: hidden; // clips the badge and image to the box corners
 
-        figure {
-          margin: 0;
-        }
+          figure {
+            margin: 0;
+          }
 
-        abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          margin: 0 0 0.5rem;
-          color: var(--global-card-bg-color) !important;
-          font-family: $font-mono-ui;
-          font-weight: 500;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          border-radius: 2px !important;
+          img.preview {
+            display: block; // no inline baseline gap under the badge
+            width: 100%;
+            margin: 0;
+          }
 
-          a {
-            color: var(--global-card-bg-color);
+          abbr {
+            display: block;
+            width: 100%;
+            margin: 0; // flush against the image below
+            padding: 0.25rem 0.4rem;
+            background-color: var(--global-theme-color);
+            color: var(--global-card-bg-color) !important;
+            font-family: $font-mono-ui;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 0;
 
-            &:hover {
-              text-decoration: none;
+            a {
+              color: var(--global-card-bg-color);
+
+              &:hover {
+                text-decoration: none;
+              }
             }
           }
         }

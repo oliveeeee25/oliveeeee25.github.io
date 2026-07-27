@@ -9,7 +9,7 @@
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
+  --global-text-color-light: #6c6c6c; // muted but still AA on white
   --global-theme-color: #{$accent-color};
   --global-hover-color: #{$accent-color};
   --global-hover-text-color: #{$white-color};
@@ -81,7 +81,7 @@ html[data-theme="dark"] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
+  --global-text-color-light: #9aa0a6; // muted but still AA on dark cards
   --global-theme-color: #{$accent-color-soft};
   --global-hover-color: #{$accent-color-soft};
   --global-hover-text-color: #{$grey-color-dark};
@@ -90,7 +90,7 @@ html[data-theme="dark"] {
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-card-bg-color: #26282e; // one step lighter than the page bg so cards read as a layer
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},

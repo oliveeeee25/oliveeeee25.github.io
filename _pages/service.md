@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 
-## Conference Tutorials:
+## Conference Tutorials
 
 * Song, X. & Hong, L. (2025, 2026). AI-assisted Communications.
 * Song, X. & Hong, L. (2024). Data Collection, Classification, and Transformation.
@@ -16,7 +16,7 @@ nav_order: 6
 * All presented at IDEA Institute on AI, Association for Information Science & Technology (ASIS&T).
 
 
-## Mentoring & Advising:
+## Mentoring & Advising
 
 * **Mentor, UNT AI Summer Program** (2024 – 2026): guided master's and undergraduate students through summer AI research projects, with mentees co-authoring papers at COLM and EMNLP.
   * Assessing and Improving LLM Spatiotemporal Reasoning (Summer 2026)
@@ -28,7 +28,7 @@ nav_order: 6
   * Elliott Wang, on natural language generation
 
 
-## Conference Reviewers:
+## Conference Reviewers
 
 * The Conference on Association for Computational Linguistics (ACL)
 * The Conference on Empirical Methods in Natural Language Processing (EMNLP)

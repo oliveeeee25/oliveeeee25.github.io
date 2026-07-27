@@ -16,6 +16,12 @@ nav_order: 6
 * All presented at IDEA Institute on AI, Association for Information Science & Technology (ASIS&T).
 
 
+## Mentoring & Advising:
+
+* Mentor, UNT AI Summer Program (2024 – 2026). Guided master's and undergraduate students through AI research projects; mentees co-authored papers at COLM and EMNLP.
+* Advised Sujana Mamidisetty, Diana Zhang, and Elliott Wang (2023 – 2026), admitted to computer science programs at UMD, UT, and Purdue.
+
+
 ## Conference Reviewers:
 
 * The Conference on Association for Computational Linguistics (ACL)

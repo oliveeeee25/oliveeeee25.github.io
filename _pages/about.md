@@ -49,7 +49,8 @@ I build LLM systems end to end, centered on two questions: how agents **collabor
     <p>Language technologies for healthier online discourse: countering misinformation and supporting crisis response.</p>
     <div class="pillar-pubs">
       <a href="/publications/#song2025dynamic">Consistent crisis response via dynamic fusion <span>EMNLP 2025</span></a>
-      <a href="/publications/#perez2025analyzing">How users flag hate speech on Reddit <span>Inf. Res. 2025</span></a>
+      <a href="/publications/#song2025assessing">Human likeness of AI-generated counterspeech <span>COLING 2025</span></a>
+      <a href="/publications/#hong2024outcome">Outcome-constrained LLMs for countering hate speech <span>EMNLP 2024</span></a>
     </div>
   </div>
 </div>

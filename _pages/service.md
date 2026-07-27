@@ -18,8 +18,11 @@ nav_order: 6
 
 ## Mentoring & Advising:
 
-* Mentor, UNT AI Summer Program (2024 – 2026). Guided master's and undergraduate students through AI research projects; mentees co-authored papers at COLM and EMNLP.
-* Advised Sujana Mamidisetty, Diana Zhang, and Elliott Wang (2023 – 2026), admitted to computer science programs at UMD, UT, and Purdue.
+* **Mentor, UNT AI Summer Program** (2024 – 2026): guided master's and undergraduate students through summer AI research projects, with mentees co-authoring papers at COLM and EMNLP.
+  * Assessing and Improving LLM Spatiotemporal Reasoning (Summer 2026)
+  * Integrating Real-Time Information into LLM Communication (Summer 2025)
+  * Fact-Checking Health-Related Posts on Social Media (Summer 2024)
+* **Graduate school advising**: advised Sujana Mamidisetty, Diana Zhang, and Elliott Wang (2023 – 2026), admitted to computer science programs at UMD, UT, and Purdue.
 
 
 ## Conference Reviewers:

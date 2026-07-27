@@ -12,10 +12,12 @@ nav_order: 6
 
 ## Conference Tutorials
 
-* Song, X. & Hong, L. (2025, 2026). AI-assisted Communications.
-* Song, X. & Hong, L. (2024). Data Collection, Classification, and Transformation.
-* Song, X. & Hong, L. (2024). Comprehending the Semantic Essence of Text: Leveraging SEANCE for Textual Analysis.
-* All presented at IDEA Institute on AI, Association for Information Science & Technology (ASIS&T).
+Presented at the IDEA Institute on AI (ASIS&T), with Prof. Lingzi Hong.
+{: .sv-note}
+
+* AI-assisted Communications <span class="sv-year">2025 · 2026</span>
+* Data Collection, Classification, and Transformation <span class="sv-year">2024</span>
+* Comprehending the Semantic Essence of Text: Leveraging SEANCE for Textual Analysis <span class="sv-year">2024</span>
 
 </div>
 
@@ -23,12 +25,14 @@ nav_order: 6
 
 ## Conference Reviewers
 
-* The Conference on Association for Computational Linguistics (ACL)
-* The Conference on Empirical Methods in Natural Language Processing (EMNLP)
-* The Nations of the Americas Chapter of the Association for Computational Linguistics(NAACL)
-* The Conference on Language Modeling (COLM)
-* International Conference on Computational Linguistics (COLING)
-* Joint Conference on Digital Libraries (JCDL)
+<ul class="sv-two-col">
+  <li><span class="sv-acr">ACL</span> Association for Computational Linguistics</li>
+  <li><span class="sv-acr">EMNLP</span> Empirical Methods in Natural Language Processing</li>
+  <li><span class="sv-acr">NAACL</span> Nations of the Americas Chapter of the ACL</li>
+  <li><span class="sv-acr">COLM</span> Conference on Language Modeling</li>
+  <li><span class="sv-acr">COLING</span> International Conference on Computational Linguistics</li>
+  <li><span class="sv-acr">JCDL</span> Joint Conference on Digital Libraries</li>
+</ul>
 
 </div>
 
@@ -36,13 +40,15 @@ nav_order: 6
 
 ## Mentoring & Advising
 
-* **Mentor, UNT AI Summer Program** (2024 – 2026): guided master's and undergraduate students through summer AI research projects, with mentees co-authoring papers at COLM and EMNLP.
-  * Assessing and Improving LLM Spatiotemporal Reasoning (Summer 2026)
-  * Integrating Real-Time Information into LLM Communication (Summer 2025)
-  * Fact-Checking Health-Related Posts on Social Media (Summer 2024)
-* **Research advising** (2023 – 2026): advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
-  * Sujana Mamidisetty, on LLM generation evaluation
-  * Diana Zhang, on LLM system design for fact-checking
-  * Elliott Wang, on natural language generation
+* **Mentor, UNT AI Summer Program** <span class="sv-year">2024 – 2026</span><br>
+  Guided master's and undergraduate students through summer AI research projects; mentees co-authored papers at COLM and EMNLP.
+  * Assessing and Improving LLM Spatiotemporal Reasoning <span class="sv-year">Summer 2026</span>
+  * Integrating Real-Time Information into LLM Communication <span class="sv-year">Summer 2025</span>
+  * Fact-Checking Health-Related Posts on Social Media <span class="sv-year">Summer 2024</span>
+* **Research advising** <span class="sv-year">2023 – 2026</span><br>
+  Advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
+  * Sujana Mamidisetty · LLM generation evaluation
+  * Diana Zhang · LLM system design for fact-checking
+  * Elliott Wang · natural language generation
 
 </div>

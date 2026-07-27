@@ -244,11 +244,78 @@ ul.task-list input[type="checkbox"] {
 
   h2 {
     font-size: 1.35rem;
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.65rem;
+  }
+
+  .sv-note {
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.7rem;
   }
 
   ul {
+    list-style: none;
+    padding-left: 0;
     margin-bottom: 0.25rem;
+
+    li {
+      margin-bottom: 0.45rem;
+
+      &::before {
+        content: "\2192\00a0";
+        color: var(--global-theme-color);
+      }
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.35rem 0 0.2rem;
+
+      li {
+        margin-bottom: 0.25rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  ul.sv-two-col {
+    columns: 2;
+    column-gap: 2.5rem;
+
+    li {
+      break-inside: avoid;
+
+      &::before {
+        content: none; // the acronym column is the marker here
+      }
+    }
+
+    @media (max-width: 640px) {
+      columns: 1;
+    }
+  }
+
+  .sv-acr {
+    display: inline-block;
+    min-width: 4.4rem;
+    font-family: $font-mono-ui;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--global-theme-color);
+  }
+
+  .sv-year {
+    font-family: $font-mono-ui;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    color: var(--global-text-color-light);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 2px;
+    padding: 0.02rem 0.4rem;
+    margin-left: 0.35rem;
+    white-space: nowrap;
+    vertical-align: 0.08rem;
   }
 }
 

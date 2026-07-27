@@ -8,6 +8,8 @@ nav_order: 6
 ---
 
 
+<div class="service-card" markdown="1">
+
 ## Conference Tutorials
 
 * Song, X. & Hong, L. (2025, 2026). AI-assisted Communications.
@@ -15,6 +17,9 @@ nav_order: 6
 * Song, X. & Hong, L. (2024). Comprehending the Semantic Essence of Text: Leveraging SEANCE for Textual Analysis.
 * All presented at IDEA Institute on AI, Association for Information Science & Technology (ASIS&T).
 
+</div>
+
+<div class="service-card" markdown="1">
 
 ## Conference Reviewers
 
@@ -25,6 +30,9 @@ nav_order: 6
 * International Conference on Computational Linguistics (COLING)
 * Joint Conference on Digital Libraries (JCDL)
 
+</div>
+
+<div class="service-card" markdown="1">
 
 ## Mentoring & Advising
 
@@ -32,7 +40,9 @@ nav_order: 6
   * Assessing and Improving LLM Spatiotemporal Reasoning (Summer 2026)
   * Integrating Real-Time Information into LLM Communication (Summer 2025)
   * Fact-Checking Health-Related Posts on Social Media (Summer 2024)
-* **Graduate school advising** (2023 – 2026): advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
+* **Research advising** (2023 – 2026): advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
   * Sujana Mamidisetty, on LLM generation evaluation
   * Diana Zhang, on LLM system design for fact-checking
   * Elliott Wang, on natural language generation
+
+</div>

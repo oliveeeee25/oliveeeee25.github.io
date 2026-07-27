@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle:  🎓 Ph.D. Candidate at the University of North Texas
+subtitle:
 
 profile:
   align: right

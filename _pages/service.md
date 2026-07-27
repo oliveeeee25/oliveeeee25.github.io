@@ -22,7 +22,10 @@ nav_order: 6
   * Assessing and Improving LLM Spatiotemporal Reasoning (Summer 2026)
   * Integrating Real-Time Information into LLM Communication (Summer 2025)
   * Fact-Checking Health-Related Posts on Social Media (Summer 2024)
-* **Graduate school advising**: advised Sujana Mamidisetty, Diana Zhang, and Elliott Wang (2023 – 2026), admitted to computer science programs at UMD, UT, and Purdue.
+* **Graduate school advising** (2023 – 2026): advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
+  * Sujana Mamidisetty, on LLM generation evaluation
+  * Diana Zhang, on LLM system design for fact-checking
+  * Elliott Wang, on natural language generation
 
 
 ## Conference Reviewers:

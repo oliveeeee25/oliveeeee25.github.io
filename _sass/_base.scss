@@ -222,14 +222,29 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// News dates (about page) — mono utility face, consistent with badges/labels
+// News table (about page) — mono dates, hairline row separators
 
-.news table th[scope="row"] {
-  font-family: $font-mono-ui;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: var(--global-text-color-light);
+.news table {
+  th,
+  td {
+    padding: 0.45rem 1rem 0.45rem 0;
+  }
+
+  tr:not(:first-child) {
+    th,
+    td {
+      border-top: 1px solid var(--global-divider-color);
+    }
+  }
+
+  th[scope="row"] {
+    font-family: $font-mono-ui;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
 }
 
 // Service page section cards
@@ -820,6 +835,16 @@ footer.sticky-bottom {
     font-size: 2.75rem;
     letter-spacing: -0.02em;
     margin-bottom: 0.3rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 3.6rem;
+      height: 3px;
+      margin-top: 0.55rem;
+      border-radius: 2px;
+      background-color: var(--global-theme-color);
+    }
   }
 
   p.desc {
@@ -828,6 +853,29 @@ footer.sticky-bottom {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--global-text-color-light);
+  }
+
+  // section headings (News, Selected Publications) repeat the hero's stroke
+  // at a smaller scale, giving the page one consistent section marker
+  article > h2 {
+    font-size: 1.6rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2.4rem;
+      height: 3px;
+      margin-top: 0.4rem;
+      border-radius: 2px;
+      background-color: var(--global-theme-color);
+    }
+
+    a:hover {
+      color: var(--global-theme-color) !important;
+      text-decoration: none;
+    }
   }
 }
 

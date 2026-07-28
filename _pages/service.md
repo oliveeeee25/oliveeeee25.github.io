@@ -10,6 +10,8 @@ nav_order: 6
 
 <div class="service-card" markdown="1">
 
+<p class="sv-eyebrow">Teaching · Outreach</p>
+
 ## Conference Tutorials
 
 Presented at the IDEA Institute on AI (ASIS&T), with Prof. Lingzi Hong.
@@ -22,6 +24,8 @@ Presented at the IDEA Institute on AI (ASIS&T), with Prof. Lingzi Hong.
 </div>
 
 <div class="service-card" markdown="1">
+
+<p class="sv-eyebrow">Peer Review</p>
 
 ## Conference Reviewers
 
@@ -37,6 +41,8 @@ Presented at the IDEA Institute on AI (ASIS&T), with Prof. Lingzi Hong.
 </div>
 
 <div class="service-card" markdown="1">
+
+<p class="sv-eyebrow">Mentorship</p>
 
 ## Mentoring & Advising
 

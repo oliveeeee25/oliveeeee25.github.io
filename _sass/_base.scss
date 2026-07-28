@@ -239,12 +239,32 @@ ul.task-list input[type="checkbox"] {
   border-top: 3px solid var(--global-theme-color);
   border-radius: 6px;
   background-color: var(--global-card-bg-color);
-  padding: 1.1rem 1.3rem 0.9rem;
-  margin-bottom: 1.25rem;
+  padding: 1.35rem 1.5rem 1.1rem;
+  margin-bottom: 1.4rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  }
+
+  .sv-eyebrow {
+    font-family: $font-mono-ui;
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+    margin: 0 0 0.3rem;
+  }
 
   h2 {
     font-size: 1.35rem;
-    margin: 0 0 0.65rem;
+    margin: 0 0 0.8rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--global-divider-color);
   }
 
   .sv-note {

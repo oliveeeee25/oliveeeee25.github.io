@@ -32,6 +32,7 @@ I work on Large Language Models and Natural Language Processing, centered on two
     <h3>Human–Agent Collaboration</h3>
     <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
     <div class="pillar-pubs">
+      <a href="/publications/#song2026ask">Ask-or-answer decisions for multi-turn intervention <span>EMNLP 2026</span></a>
       <a href="/publications/#anikmulti">Multi-agent RAG against health misinformation <span>COLM 2025</span></a>
       <a href="/publications/#song2025echoes">Forecasting hater reactions to counterspeech <span>NAACL 2025</span></a>
     </div>

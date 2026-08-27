@@ -33,16 +33,17 @@ $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
 // Site identity — accent palette
-$accent-color: #365c7d !default; // light-theme accent, muted navy
-$accent-color-soft: #8fb0ca !default; // dark-theme accent, muted light blue
+$accent-color: #5e35b1 !default; // light-theme accent, deep violet
+$accent-color-soft: #b39ddb !default; // dark-theme accent, soft lavender
 
 // Typefaces
 $font-display: "Spectral", Georgia, "Times New Roman", serif !default;
 $font-body: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-mono-ui: "IBM Plex Mono", SFMono-Regular, Menlo, Consolas, monospace !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba(0, 0, 0, 0.04);
+$code-bg-color-light: rgba($accent-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

@@ -6,10 +6,10 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #fafaf8;
+  --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #191919;
-  --global-text-color-light: #666666; // muted but still AA on the off-white bg
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #6c6c6c; // muted but still AA on white
   --global-theme-color: #{$accent-color};
   --global-hover-color: #{$accent-color};
   --global-hover-text-color: #{$white-color};
@@ -17,8 +17,8 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: #e5e5e2;
-  --global-card-bg-color: #fafaf8;
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #{$white-color};
   --global-highlight-color: #{$red-color-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
@@ -89,8 +89,8 @@ html[data-theme="dark"] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #3a3a3e;
-  --global-card-bg-color: #{$grey-color-dark}; // flush with the page bg — structure comes from hairlines, not layers
+  --global-divider-color: #424246;
+  --global-card-bg-color: #26282e; // one step lighter than the page bg so cards read as a layer
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},

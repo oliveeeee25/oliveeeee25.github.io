@@ -97,10 +97,10 @@ table.table a {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 3px solid var(--global-divider-color);
+  border-left: 5px solid var(--global-theme-color);
   margin: 1.5em 0;
-  padding: 0.5em 1em;
-  font-size: 1.05rem;
+  padding: 1em;
+  font-size: 1.2rem;
 
   p {
     margin-bottom: 0;
@@ -222,12 +222,12 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// News table (about page) — quiet dates, hairline row separators
+// News table (about page) — mono dates, hairline row separators
 
 .news table {
   th,
   td {
-    padding: 0.55rem 1rem 0.55rem 0;
+    padding: 0.45rem 1rem 0.45rem 0;
   }
 
   tr:not(:first-child) {
@@ -238,36 +238,52 @@ ul.task-list input[type="checkbox"] {
   }
 
   th[scope="row"] {
-    font-size: 0.85rem;
-    font-weight: 400;
+    font-family: $font-mono-ui;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
     color: var(--global-text-color-light);
     white-space: nowrap;
   }
 }
 
-// Service page sections — plain headed sections separated by hairlines
+// Service page section cards
 
 .service-card {
-  border-top: 1px solid var(--global-divider-color);
-  padding: 1.5rem 0 0.9rem;
-  margin-bottom: 1.6rem;
+  border: 1px solid var(--global-divider-color);
+  border-top: 3px solid var(--global-theme-color);
+  border-radius: 6px;
+  background-color: var(--global-card-bg-color);
+  padding: 1.35rem 1.5rem 1.1rem;
+  margin-bottom: 1.4rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  }
 
   .sv-eyebrow {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
+    font-family: $font-mono-ui;
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--global-text-color-light);
+    color: var(--global-theme-color);
     margin: 0 0 0.3rem;
   }
 
   h2 {
     font-size: 1.35rem;
-    margin: 0 0 0.9rem;
+    margin: 0 0 0.8rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--global-divider-color);
   }
 
   .sv-note {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--global-text-color-light);
     margin-bottom: 0.7rem;
   }
@@ -279,6 +295,11 @@ ul.task-list input[type="checkbox"] {
 
     li {
       margin-bottom: 0.45rem;
+
+      &::before {
+        content: "\2192\00a0";
+        color: var(--global-theme-color);
+      }
     }
 
     ul {
@@ -298,6 +319,10 @@ ul.task-list input[type="checkbox"] {
 
     li {
       break-inside: avoid;
+
+      &::before {
+        content: none; // the acronym column is the marker here
+      }
     }
 
     @media (max-width: 640px) {
@@ -308,24 +333,95 @@ ul.task-list input[type="checkbox"] {
   .sv-acr {
     display: inline-block;
     min-width: 4.4rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--global-text-color);
+    font-family: $font-mono-ui;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--global-theme-color);
   }
 
   .sv-year {
-    font-size: 0.8rem;
+    font-family: $font-mono-ui;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
     color: var(--global-text-color-light);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 2px;
+    padding: 0.02rem 0.4rem;
     margin-left: 0.35rem;
     white-space: nowrap;
+    vertical-align: 0.08rem;
   }
 }
 
-// Research interests line (about page)
+// Research pillars (about page)
 
-.research-interests {
-  clear: both;
-  margin: 1.5rem 0 0;
+.research-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+  margin: 1.25rem 0 1.5rem;
+  clear: both; // start below the floated profile image so cards get full width
+
+  .pillar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--global-theme-color);
+    border-radius: 6px;
+    padding: 0.9rem 1rem 0.85rem;
+    background-color: var(--global-card-bg-color);
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 0.4rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.65rem;
+      flex-grow: 1;
+    }
+
+    .pillar-pubs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+
+      a {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        color: var(--global-text-color);
+
+        &:before {
+          content: "\2192\00a0";
+          color: var(--global-theme-color);
+        }
+
+        span {
+          font-family: $font-mono-ui;
+          font-size: 0.68rem;
+          letter-spacing: 0.05em;
+          color: var(--global-theme-color);
+          white-space: nowrap;
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .research-pillars {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Citation
@@ -341,7 +437,7 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   img {
-    border-radius: 2px;
+    border-radius: 6px; // match the card radius used across the site
   }
 
   .more-info {
@@ -357,18 +453,16 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1.75rem;
-  margin-bottom: 0.75rem;
+  margin-left: 1rem;
 }
 
 .profile.float-left {
-  margin-right: 1.75rem;
-  margin-bottom: 0.75rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 26%;
+    width: 30%;
 
     .address {
       p {
@@ -550,26 +644,25 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
-  margin-top: 3rem;
 
   .contact-icons {
-    font-size: 2rem;
+    font-size: 4rem;
 
     a {
       img {
-        width: 1.8rem;
-        height: 1.8rem;
-        margin-bottom: 0.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-bottom: 1rem;
       }
 
       svg {
-        width: 1.9rem;
-        height: 2.2rem;
-        margin-bottom: 0.25rem;
+        width: 3.5rem;
+        height: 4rem;
+        margin-bottom: 0.5rem;
 
         image {
-          width: 1.9rem;
-          height: 1.9rem;
+          width: 3.5rem;
+          height: 3.5rem;
         }
       }
 
@@ -705,7 +798,8 @@ footer.sticky-bottom {
   padding-bottom: 3rem;
 
   h1 {
-    font-size: 3rem;
+    color: var(--global-theme-color);
+    font-size: 5rem;
   }
 }
 
@@ -734,28 +828,49 @@ footer.sticky-bottom {
   }
 }
 
-// About hero: hierarchy from type size, weight, and whitespace alone
+// About hero: the name is the page's one hero moment; the subtitle joins the
+// mono metadata language used by badges, dates, and keyword chips
 .post {
-  .post-header {
-    margin-bottom: 2rem;
-  }
-
   .post-title {
     font-size: 2.75rem;
     letter-spacing: -0.02em;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 3.6rem;
+      height: 3px;
+      margin-top: 0.55rem;
+      border-radius: 2px;
+      background-color: var(--global-theme-color);
+    }
   }
 
   p.desc {
-    font-size: 1rem;
+    font-family: $font-mono-ui;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--global-text-color-light);
-    margin-bottom: 0;
   }
 
+  // section headings (News, Selected Publications) repeat the hero's stroke
+  // at a smaller scale, giving the page one consistent section marker
   article > h2 {
-    font-size: 1.5rem;
-    margin-top: 4rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2.4rem;
+      height: 3px;
+      margin-top: 0.4rem;
+      border-radius: 2px;
+      background-color: var(--global-theme-color);
+    }
 
     a:hover {
       color: var(--global-theme-color) !important;
@@ -890,7 +1005,9 @@ footer.sticky-bottom {
   }
 
   h1 {
+    color: var(--global-theme-color);
     font-size: 2rem;
+    text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -904,14 +1021,14 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    font-family: $font-body;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
+    font-family: $font-mono-ui;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
     color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     text-align: right;
   }
 
@@ -921,105 +1038,143 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 2.75rem;
+      margin-bottom: 1.1rem;
+      padding: 1.1rem 1.2rem 1rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      background-color: var(--global-card-bg-color);
+      transition: border-color 0.15s ease-in-out;
+
+      &:hover {
+        border-color: var(--global-theme-color);
+      }
 
       .preview {
         width: 100%;
       }
 
       .pub-desc {
-        font-size: 0.875rem;
+        font-size: 0.85rem;
         line-height: 1.5;
         color: var(--global-text-color-light);
-        margin-top: 0.4rem;
-        max-width: 42rem;
+        margin-top: 0.45rem;
       }
 
-      // keywords stay in the data but are not shown
       .pub-keywords {
-        display: none;
+        margin-top: 0.45rem;
+
+        .pub-keyword {
+          display: inline-block;
+          margin: 0 0.3rem 0.3rem 0;
+          padding: 0.02rem 0.45rem;
+          font-family: $font-mono-ui;
+          font-size: 0.68rem;
+          letter-spacing: 0.04em;
+          color: var(--global-text-color);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 2px;
+          white-space: nowrap;
+        }
       }
 
+      // image and venue live in their own box; text column centers on it
       .row {
-        align-items: flex-start;
+        align-items: center;
       }
 
       .abbr {
         .pub-thumb {
           border: 1px solid var(--global-divider-color);
-          border-radius: 2px;
-          overflow: hidden;
+          border-radius: 6px;
+          overflow: hidden; // clips the badge and image to the box corners
 
           figure {
             margin: 0;
           }
 
           img.preview {
-            display: block;
+            display: block; // no inline baseline gap under the badge
             width: 100%;
             margin: 0;
           }
 
-          // venue is stated in the citation line; no colored badge on the thumbnail
           abbr {
-            display: none;
+            display: block;
+            width: 100%;
+            margin: 0; // flush against the image below
+            padding: 0.25rem 0.4rem;
+            background-color: var(--global-theme-color);
+            color: var(--global-card-bg-color) !important;
+            font-family: $font-mono-ui;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 0;
+
+            a {
+              color: var(--global-card-bg-color);
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
           }
         }
 
         .award {
           color: var(--global-theme-color) !important;
+          border: 1px solid var(--global-theme-color);
         }
       }
 
       .title {
         font-family: $font-display;
         font-weight: 600;
-        font-size: 1.1rem;
-        margin-bottom: 0.15rem;
+        font-size: 1.05rem;
       }
 
       .author {
-        font-size: 0.9rem;
-
         a {
-          color: inherit;
+          border-bottom: 1px dashed var(--global-theme-color);
 
           &:hover {
-            color: var(--global-theme-color);
+            border-bottom-style: solid;
             text-decoration: none;
           }
         }
 
         > em {
+          border-bottom: 1px solid;
           font-style: normal;
-          font-weight: 600;
-        }
-
-        span.author-self u {
-          text-decoration: none;
         }
 
         > span.more-authors {
           color: var(--global-text-color-light);
+          border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
 
           &:hover {
             color: var(--global-text-color);
+            border-bottom: 1px dashed var(--global-text-color);
           }
         }
       }
 
       .periodical {
-        font-size: 0.9rem;
-        color: var(--global-text-color-light);
-
-        em {
-          color: var(--global-text-color-light);
-        }
-
         a.paper-link {
-          margin-left: 0.5rem;
+          display: inline-block;
+          margin-left: 0.4rem;
+          padding: 0.02rem 0.5rem;
+          font-family: $font-mono-ui;
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.08em;
+          line-height: 1.5;
           color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
+          border-radius: 2px;
+          vertical-align: 0.1rem;
           white-space: nowrap;
 
           i {
@@ -1027,30 +1182,30 @@ footer.sticky-bottom {
           }
 
           &:hover {
-            text-decoration: underline;
+            color: var(--global-card-bg-color);
+            background-color: var(--global-theme-color);
+            text-decoration: none;
           }
         }
       }
 
       .links {
         a.btn {
-          color: var(--global-theme-color);
-          border: none;
-          border-radius: 0;
-          background: transparent;
-          box-shadow: none;
-          padding: 0;
-          margin: 0 1rem 0 0;
-          font-size: 0.85rem;
-          text-transform: none;
+          color: var(--global-text-color);
+          border: 1px solid var(--global-text-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          margin-left: 0;
 
           &:hover {
             color: var(--global-theme-color);
-            text-decoration: underline;
+            border-color: var(--global-theme-color);
           }
         }
         a.award.btn {
-          color: var(--global-highlight-color);
+          border-color: var(--global-highlight-color);
         }
       }
 
@@ -1126,7 +1281,7 @@ figure.highlight {
 pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 6px 12px;
 
   pre,
@@ -1141,7 +1296,7 @@ pre {
 code {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 3px 3px;
 }
 

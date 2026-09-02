@@ -1,62 +1,54 @@
 ---
 layout: default
 ---
-<div class="post about-home">
-  <header class="home-hero">
-    <div class="hero-copy">
-      {% if page.eyebrow %}<p class="hero-eyebrow"><span></span>{{ page.eyebrow }}</p>{% endif %}
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          {{ site.first_name -}}
-          {%- if site.middle_name %} {{ site.middle_name }}{% endif -%}
-          {%- if site.last_name %} <em>{{ site.last_name }}</em>{% endif %}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      {% if page.role %}<p class="hero-role">{{ page.role }}</p>{% endif %}
-      {% if page.intro %}<p class="hero-intro">{{ page.intro }}</p>{% endif %}
-
-      <div class="hero-actions">
-        <a class="home-button home-button-primary" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
-        <a class="home-button home-button-secondary" href="{{ '/cv/' | relative_url }}">View CV</a>
-      </div>
-
-      <div class="hero-meta" aria-label="Research profile details">
-        <span><i class="ti ti-map-pin" aria-hidden="true"></i>Denton, Texas</span>
-        <span><i class="ti ti-school" aria-hidden="true"></i>University of North Texas</span>
-      </div>
-    </div>
-
-    {% if page.profile and page.profile.image %}
-      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      <div class="hero-portrait">
-        <div class="portrait-frame">
-          {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 900px) 410px, 82vw" alt="Portrait of Xiaoying Song" cache_bust=true %}
-        </div>
-        <div class="portrait-note">
-          <span>Researching</span>
-          <strong>AI that works with people.</strong>
-        </div>
-      </div>
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        {{ site.first_name -}}
+        {%- if site.middle_name %} {{ site.middle_name }}{% endif -%}
+        {%- if site.last_name %} {{ site.last_name }}{% endif %}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    {% if page.subtitle and page.subtitle != blank %}
+      <p class="desc">{{ page.subtitle }}</p>
     {% endif %}
   </header>
 
-  <article class="home-content">
-    {{ content }}
+  <article>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <section class="home-section home-news" aria-labelledby="news-heading">
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="section-kicker">Along the way</p>
-            <h2 id="news-heading">Recent news</h2>
-          </div>
-          <a class="section-link" href="{{ '/news/' | relative_url }}">All updates <span aria-hidden="true">↗</span></a>
-        </div>
-        {% include news.liquid limit=true %}
-      </section>
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+      </h2>
+      {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
@@ -69,35 +61,34 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <section class="home-section home-publications" aria-labelledby="publications-heading">
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="section-kicker">Selected work</p>
-            <h2 id="publications-heading">Publications</h2>
-          </div>
-          <a class="section-link" href="{{ '/publications/' | relative_url }}">View all papers <span aria-hidden="true">↗</span></a>
-        </div>
-        {% include selected_papers.liquid %}
-      </section>
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <section class="home-contact" aria-labelledby="contact-heading">
-        <div>
-          <p class="section-kicker">Let’s connect</p>
-          <h2 id="contact-heading">Curious minds are always welcome.</h2>
-        </div>
-        <div class="social">
-          <div class="contact-note">{{ site.contact_note }}</div>
-          <div class="contact-icons">{% include social.liquid %}</div>
-        </div>
-      </section>
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
 
+    <div style="text-align: center; margin-top: 2rem;">
+      <div id="mmvst_a"></div>
+    </div>
+    <script>
+      window.addEventListener('load', function () {
+        var s = document.createElement('script');
+        s.src = 'https://mapmyvisitors.com/globe.js?d=Ih8Y-aip4XnNuyv6kOfjzoVO7o6lbTZSY7MWJ7szIqI';
+        document.body.appendChild(s);
+      });
+    </script>
   </article>
 </div>

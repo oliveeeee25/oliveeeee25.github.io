@@ -2,77 +2,56 @@
 layout: about
 title: About
 permalink: /
-eyebrow: Human-centered AI · LLMs · NLP
-role: Ph.D. Candidate in Data Science at the University of North Texas
-intro: I build language agents that know when to collaborate, how to personalize, and what it takes to earn human trust.
+subtitle:
 
 profile:
+  align: right
   image: square.png
+  image_circular: false # crops the image to make it circular
 
-selected_papers: true
-social: true
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true
-  scrollable: false
-  limit: 5
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+# latest_posts:
+#   enabled: true
+#   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+#   limit: 3 # leave blank to include all the blog posts
 ---
 
-<section class="home-section home-about" aria-labelledby="about-heading">
-  <div class="section-heading section-heading-split">
-    <div>
-      <p class="section-kicker">About</p>
-      <h2 id="about-heading">Technology that adapts to people.</h2>
+Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. My work has appeared at NLP and information science venues including EMNLP, NAACL, COLING, and COLM, as well as in journals such as Journal of Information Science, Journal of Informetrics, and Machine Learning.
+
+I work on Large Language Models and Natural Language Processing, centered on two questions: how agents **collaborate with humans** and with each other, and how they **personalize** to the user in front of them. I design **multi-agent pipelines** with humans in the loop and adapt model behavior to each user, from reading level to safety, using **RAG, RL, PEFT/LoRA, and quantization-aware training**. I target high-stakes applications where trust decides whether a system ships: **content moderation, misinformation response, and crisis communication**. My work spans three areas:
+
+<div class="research-pillars">
+  <div class="pillar">
+    <h3>Human–Agent Collaboration</h3>
+    <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#song2026ask">Ask-or-answer decisions for multi-turn intervention <span>EMNLP 2026</span></a>
+      <a href="/publications/#anikmulti">Multi-agent RAG against health misinformation <span>COLM 2025</span></a>
+      <a href="/publications/#song2025echoes">Forecasting hater reactions to counterspeech <span>NAACL 2025</span></a>
     </div>
-    <div class="about-copy">
-      <p>I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by <a href="https://ci.unt.edu/lingzi-hong/">Dr. Lingzi Hong</a>. Before UNT, I received my M.S. in Information Science from Central China Normal University in 2023.</p>
-      <p>My research sits at the intersection of large language models, natural language processing, and computational social science. I study how agents can collaborate with people and one another—and how model behavior can adapt to the person in front of it.</p>
-      <p>Across content moderation, misinformation response, and crisis communication, I combine <strong>RAG, reinforcement learning, PEFT/LoRA, and quantization-aware training</strong> to build systems people can actually trust.</p>
+  </div>
+  <div class="pillar">
+    <h3>Personalized Alignment</h3>
+    <p>User-centered dialogue systems and safety alignment that adapts to who the user is.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#song2025speaking">Literacy-controlled counterspeech with RAG-RL <span>EMNLP 2025</span></a>
+      <a href="/publications/#tan2026palette">On-demand safety alignment relaxation <span>Preprint 2026</span></a>
     </div>
   </div>
-</section>
-
-<section class="home-section home-research" aria-labelledby="research-heading">
-  <div class="section-heading">
-    <p class="section-kicker">Research agenda</p>
-    <h2 id="research-heading">Three threads, one human focus.</h2>
-    <p class="section-intro">I approach capable AI as a relationship-design problem: when should a system ask, adapt, coordinate, or step back?</p>
+  <div class="pillar">
+    <h3>Computational Social Science</h3>
+    <p>Language technologies for healthier online discourse: countering misinformation and supporting crisis response.</p>
+    <div class="pillar-pubs">
+      <a href="/publications/#song2025dynamic">Consistent crisis response via dynamic fusion <span>EMNLP 2025</span></a>
+      <a href="/publications/#song2025assessing">Human likeness of AI-generated counterspeech <span>COLING 2025</span></a>
+      <a href="/publications/#hong2024outcome">Outcome-constrained LLMs for countering hate speech <span>EMNLP 2024</span></a>
+    </div>
   </div>
-
-  <div class="research-pillars">
-    <article class="pillar">
-      <span class="pillar-number">01</span>
-      <div class="pillar-icon" aria-hidden="true"><i class="ti ti-messages"></i></div>
-      <h3>Human–Agent Collaboration</h3>
-      <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
-      <div class="pillar-pubs">
-        <a href="/publications/#song2026ask">Ask-or-answer decisions <span>EMNLP ’26</span></a>
-        <a href="/publications/#anikmulti">Multi-agent RAG <span>COLM ’25</span></a>
-        <a href="/publications/#song2025echoes">Forecasting hater reactions <span>NAACL ’25</span></a>
-      </div>
-    </article>
-
-    <article class="pillar">
-      <span class="pillar-number">02</span>
-      <div class="pillar-icon" aria-hidden="true"><i class="ti ti-user-heart"></i></div>
-      <h3>Personalized Alignment</h3>
-      <p>User-centered dialogue and safety alignment that adapts to the needs, context, and literacy of each user.</p>
-      <div class="pillar-pubs">
-        <a href="/publications/#song2025speaking">Literacy-controlled counterspeech <span>EMNLP ’25</span></a>
-        <a href="/publications/#tan2026palette">On-demand safety relaxation <span>Preprint ’26</span></a>
-      </div>
-    </article>
-
-    <article class="pillar">
-      <span class="pillar-number">03</span>
-      <div class="pillar-icon" aria-hidden="true"><i class="ti ti-world-heart"></i></div>
-      <h3>Computational Social Science</h3>
-      <p>Language technologies for healthier online discourse, misinformation response, and crisis support.</p>
-      <div class="pillar-pubs">
-        <a href="/publications/#song2025dynamic">Consistent crisis response <span>EMNLP ’25</span></a>
-        <a href="/publications/#song2025assessing">Human-like counterspeech <span>COLING ’25</span></a>
-        <a href="/publications/#hong2024outcome">Outcome-constrained LLMs <span>EMNLP ’24</span></a>
-      </div>
-    </article>
-  </div>
-</section>
+</div>

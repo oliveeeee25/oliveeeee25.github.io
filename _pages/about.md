@@ -22,7 +22,7 @@ announcements:
   <div class="section-heading section-heading-split">
     <div>
       <p class="section-kicker">About</p>
-      <h2 id="about-heading">Technology that adapts<br>to people.</h2>
+      <h2 id="about-heading">Technology that adapts to people.</h2>
     </div>
     <div class="about-copy">
       <p>I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by <a href="https://ci.unt.edu/lingzi-hong/">Dr. Lingzi Hong</a>. Before UNT, I received my M.S. in Information Science from Central China Normal University in 2023.</p>
@@ -43,7 +43,7 @@ announcements:
     <article class="pillar">
       <span class="pillar-number">01</span>
       <div class="pillar-icon" aria-hidden="true"><i class="ti ti-messages"></i></div>
-      <h3>Human–Agent<br>Collaboration</h3>
+      <h3>Human–Agent Collaboration</h3>
       <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
       <div class="pillar-pubs">
         <a href="/publications/#song2026ask">Ask-or-answer decisions <span>EMNLP ’26</span></a>
@@ -55,7 +55,7 @@ announcements:
     <article class="pillar">
       <span class="pillar-number">02</span>
       <div class="pillar-icon" aria-hidden="true"><i class="ti ti-user-heart"></i></div>
-      <h3>Personalized<br>Alignment</h3>
+      <h3>Personalized Alignment</h3>
       <p>User-centered dialogue and safety alignment that adapts to the needs, context, and literacy of each user.</p>
       <div class="pillar-pubs">
         <a href="/publications/#song2025speaking">Literacy-controlled counterspeech <span>EMNLP ’25</span></a>
@@ -66,7 +66,7 @@ announcements:
     <article class="pillar">
       <span class="pillar-number">03</span>
       <div class="pillar-icon" aria-hidden="true"><i class="ti ti-world-heart"></i></div>
-      <h3>Computational<br>Social Science</h3>
+      <h3>Computational Social Science</h3>
       <p>Language technologies for healthier online discourse, misinformation response, and crisis support.</p>
       <div class="pillar-pubs">
         <a href="/publications/#song2025dynamic">Consistent crisis response <span>EMNLP ’25</span></a>

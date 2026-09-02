@@ -32,11 +32,11 @@ layout: default
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
       <div class="hero-portrait">
         <div class="portrait-frame">
-          {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 900px) 390px, 82vw" alt="Portrait of Xiaoying Song" cache_bust=true %}
+          {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 900px) 410px, 82vw" alt="Portrait of Xiaoying Song" cache_bust=true %}
         </div>
         <div class="portrait-note">
           <span>Researching</span>
-          <strong>AI that works<br>with people.</strong>
+          <strong>AI that works with people.</strong>
         </div>
       </div>
     {% endif %}
@@ -86,7 +86,7 @@ layout: default
       <section class="home-contact" aria-labelledby="contact-heading">
         <div>
           <p class="section-kicker">Let’s connect</p>
-          <h2 id="contact-heading">Curious minds are<br>always welcome.</h2>
+          <h2 id="contact-heading">Curious minds are always welcome.</h2>
         </div>
         <div class="social">
           <div class="contact-note">{{ site.contact_note }}</div>

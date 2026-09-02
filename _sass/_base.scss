@@ -1878,9 +1878,9 @@ html[data-theme="dark"] .navbar {
   .home-hero {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.78fr);
+    grid-template-columns: minmax(0, 1.3fr) minmax(330px, 0.7fr);
     align-items: center;
-    gap: clamp(2.5rem, 7vw, 6.5rem);
+    gap: clamp(3rem, 6vw, 5.5rem);
     min-height: 610px;
     padding: 4.5rem 0 6.75rem;
 
@@ -1929,7 +1929,7 @@ html[data-theme="dark"] .navbar {
   }
 
   .post-title {
-    max-width: 650px;
+    max-width: 760px;
     margin: 0;
     font-size: clamp(4rem, 8.4vw, 6.65rem);
     font-weight: 500;
@@ -1937,7 +1937,7 @@ html[data-theme="dark"] .navbar {
     letter-spacing: -0.065em;
 
     em {
-      display: block;
+      display: inline;
       color: var(--global-theme-color);
       font-weight: 400;
     }
@@ -1958,7 +1958,7 @@ html[data-theme="dark"] .navbar {
   }
 
   .hero-intro {
-    max-width: 610px;
+    max-width: 680px;
     margin: 1.05rem 0 0;
     font-size: 1.18rem;
     line-height: 1.65;
@@ -2043,7 +2043,7 @@ html[data-theme="dark"] .navbar {
     position: relative;
     justify-self: end;
     width: 100%;
-    max-width: 390px;
+    max-width: 410px;
   }
 
   .portrait-frame {
@@ -2119,7 +2119,7 @@ html[data-theme="dark"] .navbar {
 
   .section-heading-split {
     display: grid;
-    grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+    grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
     gap: clamp(2.5rem, 8vw, 7rem);
   }
 
@@ -2208,7 +2208,7 @@ html[data-theme="dark"] .navbar {
       h3 {
         margin: 1.35rem 0 0.8rem;
         font-family: $font-display;
-        font-size: 1.55rem;
+        font-size: 1.48rem;
         font-weight: 500;
         line-height: 1.1;
       }
@@ -2449,6 +2449,10 @@ html[data-theme="dark"] .about-home {
 
     .post-title {
       font-size: clamp(3.8rem, 9vw, 5.2rem);
+
+      em {
+        display: block;
+      }
     }
 
     .portrait-note {

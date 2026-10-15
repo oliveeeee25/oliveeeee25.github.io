@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [**Palette**]({{ '/publications/' | relative_url }}#tan2026palette) has been accepted to **NeurIPS 2026**! We introduce a modular framework for on-demand, authorized safety alignment control in LLMs.
+[**Palette**]({{ '/publications/' | relative_url }}#tan2026palette) was accepted to **NeurIPS 2026**. ✨

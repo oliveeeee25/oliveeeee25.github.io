@@ -2,59 +2,65 @@
 layout: page
 permalink: /service/
 title: Service
-description: 
+description: Reviewing, teaching, and supporting the next generation of researchers.
 nav: true
 nav_order: 6
 ---
 
+<div class="service-sections">
+  <section class="service-section" aria-labelledby="reviewing-heading">
+    <h2 id="reviewing-heading">Peer review</h2>
+    <div>
+      <p>I review for conferences in machine learning, natural language processing, and information science.</p>
+      <ul class="review-venues" aria-label="Conferences reviewed for">
+        <li><strong>NeurIPS</strong><span>Neural Information Processing Systems</span></li>
+        <li><strong>ACL</strong><span>Association for Computational Linguistics</span></li>
+        <li><strong>EMNLP</strong><span>Empirical Methods in Natural Language Processing</span></li>
+        <li><strong>NAACL</strong><span>North American Chapter of the ACL</span></li>
+        <li><strong>COLM</strong><span>Conference on Language Modeling</span></li>
+        <li><strong>COLING</strong><span>International Conference on Computational Linguistics</span></li>
+        <li><strong>JCDL</strong><span>Joint Conference on Digital Libraries</span></li>
+        <li><strong>ASIS&amp;T</strong><span>Association for Information Science and Technology</span></li>
+      </ul>
+    </div>
+  </section>
 
-<div class="service-card" markdown="1">
+  <section class="service-section" aria-labelledby="tutorials-heading">
+    <h2 id="tutorials-heading">Invited tutorials</h2>
+    <div>
+      <p>Presented at the IDEA Institute on AI (ASIS&amp;T), with Prof. Lingzi Hong.</p>
+      <ul class="service-entries">
+        <li><span>AI-assisted communications</span><span class="service-date">2025 · 2026</span></li>
+        <li><span>Data collection, classification, and transformation</span><span class="service-date">2024</span></li>
+        <li><span>Comprehending the semantic essence of text: Leveraging SEANCE for textual analysis</span><span class="service-date">2024</span></li>
+      </ul>
+    </div>
+  </section>
 
-<p class="sv-eyebrow">Teaching · Outreach</p>
+  <section class="service-section" aria-labelledby="mentoring-heading">
+    <h2 id="mentoring-heading">Mentoring &amp; advising</h2>
+    <div>
+      <article class="service-entry">
+        <div class="service-entry-heading"><h3>UNT AI Summer Program</h3><span class="service-date">2024–2026</span></div>
+        <p>I guide master’s and undergraduate students through AI research projects. Mentees have co-authored papers at COLM and EMNLP.</p>
+        <ul class="service-entries">
+          <li><span>Assessing and improving LLM spatiotemporal reasoning</span><span class="service-date">2026</span></li>
+          <li><span>Integrating real-time information into LLM communication</span><span class="service-date">2025</span></li>
+          <li><span>Fact-checking health-related posts on social media</span><span class="service-date">2024</span></li>
+        </ul>
+      </article>
+      <article class="service-entry">
+        <div class="service-entry-heading"><h3>Research advising</h3><span class="service-date">2023–2026</span></div>
+        <p>I advised Sujana Mamidisetty on LLM generation evaluation, Diana Zhang on fact-checking system design, and Elliott Wang on natural language generation. They were admitted to computer science programs at UMD, UT, and Purdue.</p>
+      </article>
+    </div>
+  </section>
 
-## Conference Tutorials
-
-Presented at the IDEA Institute on AI (ASIS&T), with Prof. Lingzi Hong.
-{: .sv-note}
-
-* AI-assisted Communications <span class="sv-year">2025 · 2026</span>
-* Data Collection, Classification, and Transformation <span class="sv-year">2024</span>
-* Comprehending the Semantic Essence of Text: Leveraging SEANCE for Textual Analysis <span class="sv-year">2024</span>
-
-</div>
-
-<div class="service-card" markdown="1">
-
-<p class="sv-eyebrow">Peer Review</p>
-
-## Conference Reviewers
-
-<ul class="sv-two-col">
-  <li><span class="sv-acr">ACL</span> Association for Computational Linguistics</li>
-  <li><span class="sv-acr">EMNLP</span> Empirical Methods in Natural Language Processing</li>
-  <li><span class="sv-acr">NAACL</span> Nations of the Americas Chapter of the ACL</li>
-  <li><span class="sv-acr">COLM</span> Conference on Language Modeling</li>
-  <li><span class="sv-acr">COLING</span> International Conference on Computational Linguistics</li>
-  <li><span class="sv-acr">JCDL</span> Joint Conference on Digital Libraries</li>
-</ul>
-
-</div>
-
-<div class="service-card" markdown="1">
-
-<p class="sv-eyebrow">Mentorship</p>
-
-## Mentoring & Advising
-
-* **Mentor, UNT AI Summer Program** <span class="sv-year">2024 – 2026</span><br>
-  Guided master's and undergraduate students through summer AI research projects; mentees co-authored papers at COLM and EMNLP.
-  * Assessing and Improving LLM Spatiotemporal Reasoning <span class="sv-year">Summer 2026</span>
-  * Integrating Real-Time Information into LLM Communication <span class="sv-year">Summer 2025</span>
-  * Fact-Checking Health-Related Posts on Social Media <span class="sv-year">Summer 2024</span>
-* **Research advising** <span class="sv-year">2023 – 2026</span><br>
-  Advised three students on their research, all admitted to computer science programs at UMD, UT, and Purdue.
-  * Sujana Mamidisetty · LLM generation evaluation
-  * Diana Zhang · LLM system design for fact-checking
-  * Elliott Wang · natural language generation
-
+  <section class="service-section" aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading">Teaching</h2>
+    <div>
+      <div class="service-entry-heading"><h3>Teaching assistant · University of North Texas</h3><span class="service-date">Aug 2023–Jul 2024</span></div>
+      <p>Introduction to Data Science, Data Visualization, and Information Architecture.</p>
+    </div>
+  </section>
 </div>

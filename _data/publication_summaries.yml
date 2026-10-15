@@ -1,0 +1,95 @@
+# Concise summaries keyed to _bibliography/papers.bib.
+tan2026palette:
+  problem: Blanket refusal behavior can block legitimate professional uses of LLMs.
+  contribution: Palette combines refusal-direction search, lightweight adaptation, and parameter merging for selective, authorized safety control.
+  key_insight: Domain-specific adaptations can be composed without retraining while preserving safety outside the authorized domains.
+
+song2026ask:
+  problem: Asking more questions can improve a correction, but also adds interaction cost.
+  contribution: RO-PnR learns when to probe and when to deliver a final response in health misinformation dialogues.
+  key_insight: Weighing information gain against interaction cost improves utility with about 30% fewer turns than always-probe policies.
+
+song2026cognitive:
+  problem: Cognitive signals offer a window into language processing, but their use across NLP is fragmented.
+  contribution: A survey connecting cognitive-signal datasets, preprocessing, tasks, and language-model integration methods.
+  key_insight: Eye tracking and EEG provide complementary perspectives for studying more interpretable, human-centered NLP.
+
+do2026stcrisis:
+  problem: Crisis responses must match evidence to the right location and time.
+  contribution: ST-Crisis pairs situational awareness posts with crisis queries to diagnose spatiotemporal grounding and reasoning.
+  key_insight: Both standard LLMs and grounded RAG systems still struggle to connect crisis evidence to where and when it applies.
+
+tan2026qrealign:
+  problem: Task-specific fine-tuning can erode safety alignment, making deployment riskier.
+  contribution: Q-realign restores alignment during quantization, reducing unsafe outputs while preserving task performance.
+  key_insight: Combining realignment with compression makes safety restoration practical on consumer hardware.
+
+tan2025zeroqat:
+  problem: Backpropagation makes quantization-aware LLM training too memory-intensive for many devices.
+  contribution: ZeroQAT uses forward-only, zeroth-order optimization for low-bit training, including 13B models on an 8GB GPU.
+  key_insight: Avoiding backpropagation brings training memory requirements close to inference costs, enabling on-device adaptation.
+
+song2026comparative:
+  problem: Book classification requires LLMs to navigate a detailed library taxonomy using varied source material.
+  contribution: A comparative evaluation across models, input types, data sizes, and Library of Congress Classification levels.
+  key_insight: Diverse inputs help classification, while long texts and fine-grained categories remain challenging.
+
+song2025speaking:
+  problem: Health misinformation corrections may be too difficult for their intended audience to understand.
+  contribution: Controlled-Literacy combines retrieval and reinforcement learning to tailor counterspeech to different health literacy levels.
+  key_insight: Aligning language with audience literacy produces more accessible and preferred responses.
+
+song2025dynamic:
+  problem: Automated crisis responses can vary in style even when individual answers are useful.
+  contribution: A style-consistency metric and two-stage fusion method that scores and integrates candidate responses.
+  key_insight: Selecting and combining responses at the instance level improves both quality and stylistic consistency.
+
+anikmulti:
+  problem: Health counterspeech needs relevant, accurate evidence alongside constructive language.
+  contribution: A multi-agent RAG framework combining static and dynamic evidence for health misinformation intervention.
+  key_insight: Coordinating retrieval and response refinement improves factual accuracy, informativeness, relevance, and politeness.
+
+song2025echoes:
+  problem: A counterspeech response alone does not reveal whether a hater will return or remain hateful.
+  contribution: ReEco, a dataset of three-turn Reddit conversations, supports forecasting hater reentry and subsequent hatefulness.
+  key_insight: Counterspeech language is linked to later reactions, making conversational outcomes a useful evaluation target.
+
+song2025assessing:
+  problem: It is unclear how closely AI-generated counterspeech resembles human responses.
+  contribution: An evaluation of multiple generation strategies using both classifiers and human judges.
+  key_insight: Differences in style, politeness, and specificity make AI counterspeech readily distinguishable from human writing.
+
+hong2025dynamic:
+  problem: Crisis communication must address information needs with relevant, empathetic, and actionable responses.
+  contribution: A comparison of prompting, RAG, and dynamic fusion of multiple LLMs for crisis-related social media queries.
+  key_insight: Dynamic fusion improves professionalism, actionability, empathy, and relevance by combining model responses.
+
+liu2025hybrid:
+  problem: LLM-generated subject headings can hallucinate labels or depart from a controlled vocabulary.
+  contribution: A hybrid framework using embeddings to predict heading counts and guide post-editing of LLM outputs.
+  key_insight: Combining prediction with vocabulary-aware editing yields more controlled subject assignments with fewer hallucinations.
+
+perez2025analyzing:
+  problem: User responses that flag hate speech contain moderation signals that are difficult to identify automatically.
+  contribution: A dataset of Reddit flagging responses paired with hateful comments, with transformer-based classification and linguistic analysis.
+  key_insight: Distinctive patterns in user flagging language can inform hate speech moderation.
+
+hong2024outcome:
+  problem: Counterspeech generation should account for what happens next in a conversation.
+  contribution: Prompting, fine-tuning, and reinforcement learning methods constrained by low incivility and non-hateful hater reentry.
+  key_insight: Desired conversational outcomes can directly guide generation toward more constructive exchanges.
+
+ye2024academic:
+  problem: Recommending collaborators requires modeling both scholarly relationships and researcher attributes.
+  contribution: MAH combines co-authorship and citation networks with multi-attribute researcher embeddings.
+  key_insight: Jointly representing different relationships and attributes improves collaboration recommendations on real-world datasets.
+
+tan2023effective:
+  problem: Random negative sampling limits unsupervised contrastive learning of sentence embeddings.
+  contribution: nmCSE selects negatives through distance-based weighting and grid sampling.
+  key_insight: More deliberate negative selection improves sentence representations across seven semantic similarity datasets.
+
+ye2023research:
+  problem: Research frontier detection often focuses on publications and patents, leaving grant information underused.
+  contribution: A grant-based framework using adapted indicators and path mining to trace research topic evolution.
+  key_insight: Funding records offer another view of emerging research, identifying five frontiers in a US health informatics case study.

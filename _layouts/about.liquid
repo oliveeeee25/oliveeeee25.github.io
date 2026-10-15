@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="post home-page">
   <header class="post-header home-header">
-    <p class="section-eyebrow">Language models &amp; human-centered AI</p>
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         {{ site.first_name -}}
@@ -28,7 +27,7 @@ layout: default
           {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
             {% assign profile_alt = site.first_name | append: ' ' | append: site.last_name %}
-            {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 768px) 320px, 70vw" alt=profile_alt cache_bust=true %}
+            {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 768px) 220px, 60vw" alt=profile_alt cache_bust=true %}
           {% endif %}
           {% if page.profile.more_info %}
             <div class="more-info">{{ page.profile.more_info }}</div>
@@ -52,7 +51,6 @@ layout: default
       <section class="home-section" aria-labelledby="news-heading">
         <div class="section-heading">
           <div>
-            <p class="section-eyebrow">Recent updates</p>
             <h2 id="news-heading">News</h2>
           </div>
           <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">↗</span></a>
@@ -75,7 +73,6 @@ layout: default
       <section class="home-section" aria-labelledby="publications-heading">
         <div class="section-heading">
           <div>
-            <p class="section-eyebrow">Selected work</p>
             <h2 id="publications-heading">Publications</h2>
           </div>
           <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>

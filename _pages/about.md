@@ -9,6 +9,11 @@ profile:
   image: square.png
   image_circular: false # crops the image to make it circular
 
+introduction: |
+  Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). I received my M.S. in Information Science from Central China Normal University in 2023. My work has appeared at NeurIPS, EMNLP, NAACL, COLM, and COLING.
+
+  I develop LLM systems that **collaborate effectively**, **adapt to user needs**, and **generate reliable responses**. My research combines multi-agent RAG, reinforcement learning, and parameter-efficient fine-tuning for multi-turn dialogue and controllable generation, with applications in health misinformation and crisis communication. I evaluate these systems through diagnostic benchmarks and human judgments.
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -22,10 +27,6 @@ announcements:
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #   limit: 3 # leave blank to include all the blog posts
 ---
-
-Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science and Research Assistant at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). I received my M.S. in Information Science from Central China Normal University in 2023. My research has appeared at NeurIPS, EMNLP, NAACL, COLM, and COLING. [CV]({{ '/assets/pdf/xiaoying_song_cv.pdf' | relative_url }})
-
-I develop large language model (LLM) systems that **collaborate effectively**, **adapt to user needs**, and **generate reliable responses**. My work combines multi-agent retrieval-augmented generation (RAG), reinforcement learning, and parameter-efficient fine-tuning to improve dialogue decisions and controllable generation. I study these methods in health misinformation intervention, counterspeech, and crisis communication, using human evaluation to assess response quality and user preferences. My research focuses on three connected areas:
 
 <div class="research-pillars">
   <div class="pillar">

@@ -43,7 +43,13 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      source = @context.registers[:site].source
+      files = Dir[File.join(source, '_sass', '**', '*.scss')].sort
+      files << File.join(source, 'assets', 'css', 'main.scss')
+      digest = Digest::MD5.new
+      files.each { |file| digest.update(File.read(file)) }
+      digest.update(@context.registers[:site].config['max_width'].to_s)
+      [file_name, '?', digest.hexdigest].join
     end
   end
 end

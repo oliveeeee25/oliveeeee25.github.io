@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
+<div class="post home-page">
+  <header class="post-header home-header">
+    <p class="section-eyebrow">Language models &amp; human-centered AI</p>
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         {{ site.first_name -}}
@@ -18,67 +19,74 @@ layout: default
   </header>
 
   <article>
-    {% if page.introduction %}
-      <div class="about-intro">
-    {% endif %}
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
-    {% if page.introduction %}
+    <div class="about-intro">
+      {% if page.introduction %}
         <div class="about-intro-text">{{ page.introduction | markdownify }}</div>
-      </div>
-    {% endif %}
+      {% endif %}
+      {% if page.profile %}
+        <div class="profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% assign profile_alt = site.first_name | append: ' ' | append: site.last_name %}
+            {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 768px) 320px, 70vw" alt=profile_alt cache_bust=true %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="home-contact" aria-label="Research profiles">
+      <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener"
+        >Google Scholar <span aria-hidden="true">↗</span></a
+      >
+      <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" target="_blank" rel="noopener"
+        >LinkedIn <span aria-hidden="true">↗</span></a
+      >
+      <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
+    </div>
 
-    <div class="clearfix">{{ content }}</div>
+    {{ content }}
 
-    <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-section" aria-labelledby="news-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Recent updates</p>
+            <h2 id="news-heading">News</h2>
+          </div>
+          <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
-    <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="home-section" aria-labelledby="posts-heading">
+        <div class="section-heading">
+          <h2 id="posts-heading">Latest posts</h2>
+          <a class="section-link" href="{{ '/blog/' | relative_url }}">All posts <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="home-section" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Selected work</p>
+            <h2 id="publications-heading">Publications</h2>
+          </div>
+          <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Social -->
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
@@ -87,9 +95,7 @@ layout: default
       {% include newsletter.liquid center=true %}
     {% endif %}
 
-    <div style="text-align: center; margin-top: 2rem;">
-      <div id="mmvst_a"></div>
-    </div>
+    <div class="visitor-map"><div id="mmvst_a"></div></div>
     <script>
       window.addEventListener('load', function () {
         var s = document.createElement('script');

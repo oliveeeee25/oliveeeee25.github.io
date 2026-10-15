@@ -1,8 +1,8 @@
 ---
 ---
-<div class="row">
+<div class="row publication-row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-4 abbr">
+    <div class="col-md-4 abbr">
       <div class="pub-thumb">
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
@@ -39,7 +39,7 @@
               class="preview"
               zoomable=true
               avoid_scaling=true
-              alt=entry.preview
+              alt=entry.title
             %}
           {% endif %}
         {% endif %}
@@ -48,7 +48,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-md-8{% else %}col-md-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -87,7 +87,14 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <span class="author-self"><strong><u>{{- author.first }} {{ author_last_html -}}</u></strong></span>
+          <span class="author-self"
+            ><strong
+              ><u>
+                {{- author.first }}
+                {{ author_last_html -}}
+              </u></strong
+            ></span
+          >
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
@@ -185,14 +192,18 @@
         {% else %}
           {% assign paper_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
         {% endif %}
-        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i>PDF</a>
+        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener" aria-label="Read {{ entry.title | escape }}"
+          ><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Paper</a
+        >
       {%- elsif entry.html %}
         {% if entry.html contains '://' %}
           {% assign paper_url = entry.html %}
         {% else %}
           {% assign paper_url = entry.html | prepend: '/assets/html/' | relative_url %}
         {% endif %}
-        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i>Paper</a>
+        <a href="{{ paper_url }}" class="paper-link" target="_blank" rel="noopener" aria-label="Read {{ entry.title | escape }}"
+          ><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Paper</a
+        >
       {%- endif %}
     </div>
     <div class="periodical">
@@ -370,7 +381,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 
@@ -381,5 +392,4 @@
       </div>
     {% endif %}
   </div>
-
 </div>

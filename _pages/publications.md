@@ -2,6 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
+description: Research on LLM agents, personalized alignment, and human-centered evaluation.
 nav: true
 nav_order: 2
 ---

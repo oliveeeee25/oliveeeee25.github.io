@@ -10,10 +10,11 @@ contact_note: >
   For research inquiries and collaboration, please connect through LinkedIn or Google Scholar.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of Xiaoying Song, a Ph.D. Candidate in Data Science at the University of North Texas.
+  Research on LLM agents, post-training, personalized alignment, and human-centered evaluation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Xiaoying Song, human-agent collaboration, personalized alignment, computational social science, health misinformation, large language models # add your own keywords or leave empty
+keywords: Xiaoying Song, LLM agents, LLM post-training, personalized alignment, human-centered evaluation, reinforcement learning, retrieval-augmented generation # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: p.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

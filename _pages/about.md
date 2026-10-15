@@ -23,35 +23,35 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). Prior to joining UNT, I received my M.S. degree in Information Science from Central China Normal University in 2023. My work has appeared at NLP and information science venues including EMNLP, NAACL, COLING, and COLM, as well as in journals such as Journal of Information Science, Journal of Informetrics, and Machine Learning.
+Hi, I’m Xiaoying, a Ph.D. Candidate in Data Science and Research Assistant at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). I received my M.S. in Information Science from Central China Normal University in 2023. My research has appeared at NeurIPS, EMNLP, NAACL, COLM, and COLING. [CV]({{ '/assets/pdf/xiaoying_song_cv.pdf' | relative_url }})
 
-I work on Large Language Models and Natural Language Processing, centered on two questions: how agents **collaborate with humans** and with each other, and how they **personalize** to the user in front of them. I design **multi-agent pipelines** with humans in the loop and adapt model behavior to each user, from reading level to safety, using **RAG, RL, PEFT/LoRA, and quantization-aware training**. I target high-stakes applications where trust decides whether a system ships: **content moderation, misinformation response, and crisis communication**. My work spans three areas:
+I develop large language model (LLM) systems that **collaborate effectively**, **adapt to user needs**, and **generate reliable responses**. My work combines multi-agent retrieval-augmented generation (RAG), reinforcement learning, and parameter-efficient fine-tuning to improve dialogue decisions and controllable generation. I study these methods in health misinformation intervention, counterspeech, and crisis communication, using human evaluation to assess response quality and user preferences. My research focuses on three connected areas:
 
 <div class="research-pillars">
   <div class="pillar">
-    <h3>Human–Agent Collaboration</h3>
-    <p>Multi-turn conversation optimization and multi-agent coordination for complex, evolving tasks.</p>
+    <h3>LLM Agents &amp; Post-Training</h3>
+    <p>Learning when to ask or answer, coordinating multi-agent RAG, and optimizing dialogue decisions and generation through reinforcement learning and fine-tuning.</p>
     <div class="pillar-pubs">
-      <a href="/publications/#song2026ask">Ask-or-answer decisions for multi-turn intervention <span>EMNLP 2026</span></a>
+      <a href="/publications/#song2026ask">RL for ask-or-answer decisions in multi-turn dialogue <span>EMNLP 2026</span></a>
       <a href="/publications/#anikmulti">Multi-agent RAG against health misinformation <span>COLM 2025</span></a>
-      <a href="/publications/#song2025echoes">Forecasting hater reactions to counterspeech <span>NAACL 2025</span></a>
+      <a href="/publications/#hong2024outcome">Outcome-constrained LLMs for countering hate speech <span>EMNLP 2024</span></a>
     </div>
   </div>
   <div class="pillar">
     <h3>Personalized Alignment</h3>
-    <p>User-centered dialogue systems and safety alignment that adapts to who the user is.</p>
+    <p>Adapting responses to users’ literacy levels and preferences, with modular safety controls for authorized, domain-specific contexts.</p>
     <div class="pillar-pubs">
       <a href="/publications/#song2025speaking">Literacy-controlled counterspeech with RAG-RL <span>EMNLP 2025</span></a>
-      <a href="/publications/#tan2026palette">On-demand safety alignment relaxation <span>Preprint 2026</span></a>
+      <a href="/publications/#tan2026palette">Palette: on-demand authorized safety control <span>NeurIPS 2026</span></a>
     </div>
   </div>
   <div class="pillar">
-    <h3>Computational Social Science</h3>
-    <p>Language technologies for healthier online discourse: countering misinformation and supporting crisis response.</p>
+    <h3>Human-Centered Evaluation</h3>
+    <p>Assessing response human likeness, consistency, and grounding through diagnostic benchmarks, automated metrics, and human evaluation.</p>
     <div class="pillar-pubs">
-      <a href="/publications/#song2025dynamic">Consistent crisis response via dynamic fusion <span>EMNLP 2025</span></a>
       <a href="/publications/#song2025assessing">Human likeness of AI-generated counterspeech <span>COLING 2025</span></a>
-      <a href="/publications/#hong2024outcome">Outcome-constrained LLMs for countering hate speech <span>EMNLP 2024</span></a>
+      <a href="/publications/#song2025dynamic">Evaluating and improving crisis response consistency <span>EMNLP 2025</span></a>
+      <a href="/publications/#do2026stcrisis">ST-Crisis: benchmarking spatiotemporal grounding <span>Under review</span></a>
     </div>
   </div>
 </div>

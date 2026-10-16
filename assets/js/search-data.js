@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-service",
           title: "Service",
-          description: "",
+          description: "Reviewing, teaching, and supporting the next generation of researchers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/service/";
@@ -400,8 +400,8 @@ ninja.data = [{
           section: "News",},{id: "news-three-papers-were-accepted-to-emnlp-2026",
           title: 'Three papers were accepted to EMNLP 2026. 🎉',
           description: "",
-          section: "News",},{id: "news-our-paper-palette-has-been-accepted-to-neurips-2026-we-introduce-a-modular-framework-for-on-demand-authorized-safety-alignment-control-in-llms",
-          title: 'Our paper Palette has been accepted to NeurIPS 2026! We introduce a modular...',
+          section: "News",},{id: "news-palette-was-accepted-to-neurips-2026",
+          title: 'Palette was accepted to NeurIPS 2026. ✨',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

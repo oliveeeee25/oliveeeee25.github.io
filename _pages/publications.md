@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Explore my publications by research topic.
 nav: true
 nav_order: 2
 ---

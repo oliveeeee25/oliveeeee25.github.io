@@ -25,6 +25,11 @@
       if (active) link.setAttribute("aria-current", "true");
       else link.removeAttribute("aria-current");
     });
+    const activeLink = links.find((link) => link.hasAttribute("aria-current"));
+    if (activeLink.offsetLeft < nav.scrollLeft) nav.scrollLeft = activeLink.offsetLeft;
+    else if (activeLink.offsetLeft + activeLink.offsetWidth > nav.scrollLeft + nav.clientWidth) {
+      nav.scrollLeft = activeLink.offsetLeft + activeLink.offsetWidth - nav.clientWidth;
+    }
 
     const visible = sections.filter((section) => !section.hidden);
     const count = visible.reduce((total, section) => total + section.querySelectorAll("ol.bibliography > li").length, 0);
@@ -33,7 +38,7 @@
 
     if (scroll && target && container.contains(target)) {
       // Existing links to individual papers still reveal and scroll to that paper.
-      const destination = selected && target !== selected ? target : nav;
+      const destination = selected && target !== selected ? target : container;
       requestAnimationFrame(() => destination.scrollIntoView({ block: "start" }));
     }
   }

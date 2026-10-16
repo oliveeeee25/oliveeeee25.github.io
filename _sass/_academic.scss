@@ -291,6 +291,72 @@ strong {
   margin-top: 1.5rem;
 }
 
+.publication-topic-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  scroll-margin-top: 85px;
+}
+
+.publication-topic-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 7px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.publication-topic-nav a:hover,
+.publication-topic-nav a[aria-current="true"] {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  background: var(--academic-tint);
+}
+
+.topic-count {
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.publication-topic {
+  margin-top: 2rem;
+  scroll-margin-top: 85px;
+}
+
+.publication-topic + .publication-topic {
+  margin-top: 3rem;
+}
+
+.publication-topic[hidden] {
+  display: none;
+}
+
+.publication-topic-heading {
+  margin-bottom: 1.25rem;
+}
+
+.publication-topic-heading h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.5rem;
+}
+
+.publication-topic-heading p {
+  margin: 0;
+  max-width: 48rem;
+  font-size: 0.94rem;
+  color: var(--global-text-color-light);
+}
+
 .publications h2.bibliography {
   text-align: left;
   font-family: $font-body;

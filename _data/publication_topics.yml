@@ -1,0 +1,19 @@
+- id: alignment
+  label: Alignment & safety
+  title: Personalized alignment & safety
+  description: Adapting model behavior to users’ literacy, conversational goals, and authorized needs.
+
+- id: agents
+  label: Agents & post-training
+  title: LLM agents & post-training
+  description: Learning dialogue decisions, coordinating evidence and responses, and making model adaptation more efficient.
+
+- id: evaluation
+  label: Human-centered evaluation
+  title: Human-centered evaluation
+  description: Understanding model outputs and user reactions through human judgments, cognitive signals, and diagnostic benchmarks.
+
+- id: knowledge
+  label: Knowledge & representation
+  title: Knowledge discovery & representation
+  description: Organizing information, learning representations, and uncovering patterns in scholarly data.

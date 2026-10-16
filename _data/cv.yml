@@ -8,7 +8,7 @@
     - name: Institution
       value: University of North Texas
     - name: Advisor
-      value: <a href="https://ci.unt.edu/lingzi-hong/">Dr. Lingzi Hong</a>
+      value: <a href="https://lingzihong.github.io/">Dr. Lingzi Hong</a>
     - name: Research Areas
       value: Human-agent collaboration, personalized alignment, computational social science
 

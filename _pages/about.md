@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
 
 introduction: |
-  I’m Xiaoying, a Ph.D. candidate in **Data Science** at the University of North Texas, advised by [Dr. Lingzi Hong](https://ci.unt.edu/lingzi-hong/). I received my M.S. in Information Science from Central China Normal University in 2023.
+  I’m Xiaoying, a Ph.D. candidate in **Data Science** at the University of North Texas, advised by [Dr. Lingzi Hong](https://lingzihong.github.io/). I received my M.S. in Information Science from Central China Normal University in 2023.
 
   I build language models that **collaborate with people, adapt to their needs, and respond reliably**. Using multi-agent RAG, reinforcement learning, and efficient fine-tuning, I study when agents should ask questions, how to personalize their responses, and how to evaluate their interactions. My work connects model development with human evaluation in **health misinformation, counterspeech, and crisis communication**, with publications at NeurIPS, EMNLP, NAACL, COLM, and COLING.
 

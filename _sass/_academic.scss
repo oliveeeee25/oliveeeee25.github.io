@@ -488,21 +488,6 @@ strong {
   margin: 0;
 }
 
-.cv-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.cv-actions a {
-  padding: 0.45rem 0.9rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 6px;
-  background: var(--global-card-bg-color);
-  font-size: 0.9rem;
-}
-
 .cv-pdf {
   border: 1px solid var(--global-divider-color);
   border-radius: 10px;

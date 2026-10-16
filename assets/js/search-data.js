@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Research on LLM agents, personalized alignment, and human-centered evaluation.",
+          description: "Explore my publications by research topic.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";

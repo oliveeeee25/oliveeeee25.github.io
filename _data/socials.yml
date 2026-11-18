@@ -13,7 +13,6 @@
 # email: # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
@@ -35,6 +34,11 @@ linkedin_username: xiaoying-song-0335b5295 # your LinkedIn user name
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: wn5zGK4AAAAJ # your Google Scholar ID
+github_username: oliveeeee25 # your GitHub user name
+huggingface:
+  title: Hugging Face
+  url: https://huggingface.co/olivexiaoying
+  logo: https://huggingface.co/front/assets/huggingface_logo-noborder.svg
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
